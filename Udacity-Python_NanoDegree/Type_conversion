@@ -1,0 +1,39 @@
+Converting Values
+The named types str, int, float, and bool can be used to convert values from one type to another.
+
+str(42)       # => "42"
+
+int("42")     # => 42
+float("2.5")  # => 2.5
+float("1")    # => 1.0
+
+int("42.5")   # Raises an error (ValueError).
+Truthiness
+The conversion of a value to a boolean gives the value an essence of "truthiness" – as a boolean, is this object True or False? Empty objects are "Falsy":
+
+# 'Falsy' values.
+bool(None)   # => False
+bool(False)  # => False
+bool(0)      # => False
+bool(0.0)    # => False
+bool('')     # => False
+
+# Empty data structures too!
+bool([])     # => False
+Other objects are "truthy":
+
+bool(41)     # => True
+bool('abc')  # => True
+bool(int)    # => True
+
+# Non-empty containers too!
+bool([False])  # => True
+Almost all values are implicitly convertible to a boolean – as a result, some if statements can be simplified: instead of writing if value == True, you can (and should!) write if value, which implicitly evaluates if bool(value).
+
+New Terms
+bool :	A binary type with type values: False and True.
+float :	A numeric type representing real numbers.
+int	 :	A numeric type representing whole numbers.
+None :	A singleton value representing nothingness.
+str :	A type representing a text value.
+Truthiness :	The property that every Python object is implicitly convertible to a boolean value.
