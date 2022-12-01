@@ -1,0 +1,38 @@
+Sequence :	An ordered collection of data.
+Slicing :	Special syntax for accessing or updating elements or subsequences of data from a sequence type.
+str :	An immutable sequence of characters.
+
+Three Sequence types are 
+list : a mutable collection of heterogenous data
+Tuple : an immutable collection of heterogenous data
+Str : an immutable sequence of characters.
+
+Python provides a tool to access individual characters or subsequences of characters from a string:
+
+s = 'Udacity'
+
+# Access an element by index, starting at position 0.
+s[0] == 'U'
+s[1] == 'd'
+s[4] == 'i'
+s[7] # Bad!
+
+# Access an element by a negative index, starting at the end.
+s[-1] == 'y'
+s[-2] == 't'
+s[-4] == 'c'
+s[-7] == 'U'
+
+Python also provides a way to extract a slice of characters from a string:
+
+s[0:2] == 'Ud'
+s[4:7] == 'ity'
+s[1:5] == 'daci'
+
+
+
+
+
+
+
+
