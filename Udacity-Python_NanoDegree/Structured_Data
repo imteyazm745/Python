@@ -5,3 +5,16 @@ Number : A data value representing a mathematical number. either int (integer) o
 Text : A data value representing text as a sequence of characters.
 A string value represents an immutable sequence of text characters.
 The None value represents nothingness.
+
+MORE ABOUT DATA STRUCTURES
+Container : An object that holds elements of data.
+Iterable : An object that can produce a stream of elements of data.
+Mapping : An unordered collection associating elements of data (keys) to other elements of data (values).
+Mutable : A property of a data collection where the top-level collection can be changed.
+Immutable : But if we are planning to change the data adding things/removing things the data is mutable
+Schema : A representation or outline of a data model.
+Sequence : An ordered collection of data elements.
+Set : An unordered collection of unique data elements.
+Sized : An object that has a finite size.
+Structured Data : Information to which we assign meaning through organization.
+
