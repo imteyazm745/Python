@@ -1,0 +1,35 @@
+An object has a type and an identity – like a suitcase.
+A variable is a name associated to an object via a namespace – like a suitcase tag.
+Python's dynamic typing system encouraging duck typing and interface-driven typing.
+
+Objects
+It's essential to understand that everything in Python is an object. Yes, pretty much everything!
+
+isinstance(4, object)        # => True
+isinstance("Hello", object)  # => True
+isinstance(None, object)     # => True
+isinstance([1,2,3], object)  # => True
+isinstance(str, object)      # => True
+
+Furthermore, every Python object has a type. The type of a Python object can be evaluated with the type function:
+
+type(1)         # => <class 'int'>
+type("Hello")   # => <class 'str'>
+type(None)      # => <class 'NoneType'>
+
+type(int)       # => <class 'type'>
+type(type(int)) # => <class 'type'>
+
+Clearly, something interesting, and perhaps recursive, is happening at the root – the object 1 has type int, 
+the object int has type type, and the object type also has type type.
+
+Lastly, every Python object has an identity. The identity of a Python object can be evaluated with the id function:
+
+id(41)  # => 4361704848 (for example)
+
+1 == 1.0 # => True  Equal is used for comparing values
+1 is 1.0 # => False "is" is used when we are comapring id/identities which is almost never match
+
+Object :	A fundamental type that represents all objects in Python.
+Object : Identity	A unique numeric value that identifies a specific object.
+Object : Type	A category of a specific object.
