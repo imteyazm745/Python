@@ -1,4 +1,4 @@
-List : A mutable sequence of heterogenous elements.
+List : A mutable(can be changed) sequence of heterogenous elements.
 
 A list is a finite, ordered, mutable sequence of elements. Lists are one of
 the most fundamental, and most useful, collections that Python provides.
@@ -11,6 +11,12 @@ Lists can be created as literals:
 empty = []
 letters = ['a', 'b', 'c', 'd']
 numbers = [2, 3, 5]
+
+and we can have nested lists that contain some combo od other elements themselves being lists.
+nested = [letters, numbers]
+
+nested # => [['a', 'b', 'c', 'd'], [2,3,5]] 
+
 Lists can contain elements of different types:
 
 mixed = [4, 5, "seconds"]
@@ -18,6 +24,7 @@ Lists are mutable. To append an element to the end of a list, use the .append me
 
 numbers.append(7)   # numbers == [2, 3, 5, 7]
 numbers.append(11)  # numbers == [2, 3, 5, 7, 11]
+
 Lists can contain any object – even other collections!
 
 x = [letters, numbers]
@@ -25,6 +32,12 @@ x  # => [['a', 'b', 'c', 'd'], [2, 3, 5, 7, 11]]
 x[0]  # => ['a', 'b', 'c', 'd']
 x[0][1]  # => 'b'
 x[1][2:]  # => [5, 7, 11]
+
+we can assign a new value into the position referred by some square brackets.
+
+numbers[1] = 100
+
+numbers # => [2, 100, 5, 7, 11]
 
 
 
