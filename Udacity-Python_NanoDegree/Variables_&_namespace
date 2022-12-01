@@ -1,0 +1,52 @@
+Everything is an object in python
+    An object has a type and an identity
+    An object is like a suitcase
+    Use == to compare values and ‘is’ to compare identities
+A variable is a name associated to an object via a namespace
+    Variable assignment adds a new local reference to an object and doesnot copy objects
+    A variable is like a baggage tag
+Python’s dynamic typing system supports duck-typing
+
+Variables
+A variable is a named reference to an object. You've used variables before – anytime
+you write something like x = 5, you create a variable with the name 'x' referencing the int object 5. 
+Variables are dynamically-typed – declared with no explicit type.
+In Python, objects are typed, but variables are untyped.
+
+Let's take a look at an example:
+x = 5
+print(x + 3)  # Prints 8.
+x = "Hello"
+print(x + " world!")  # Prints "Hello world!".
+
+Aside: is vs. ==
+So far, we've seen == for equality testing: 1 == 1.0 is True, after all! 
+However, we know that these objects are different in some fundamental way, 
+after all, type(1) != type(1.0), because int != float.
+
+To save the day, we have the is operator – which checks for identity instead of equality.
+While equality is a matter of interpretation, identity is undebatable – two objects are 
+identical if and only if they are literally the same Python object, whereas two objects are equal if their contents compare equal.
+
+Consider the following code:
+x = "hello world"
+y = "hello " + "world"
+ 
+x == y  # => True
+x is y  # => False
+ 
+id(x)  # => 4455464720
+id(y)  # => 4455960848
+
+is checks if the suitcases are the same.
+== checks if they have the same stuff inside.
+
+Namespaces
+A namespace (or symbol table) is an associative mapping from (variable) names to objects. 
+A namespace is a system that has a unique name for each and every object in Python. 
+An object might be a variable or a method. Python itself maintains a namespace in the form of a Python dictionary. 
+
+Namespaces can be nested – at any moment, Python is aware of at least a local namespace mapping local variable names to objects,
+a global namespace mapping global variable names to objects, and a builtin namespace mapping builtin variable names to objects.
+At any time, you can access the local namespace with the locals() built-in function and the global namespace with the globals() built-in function.
+
