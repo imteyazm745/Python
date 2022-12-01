@@ -29,6 +29,19 @@ s[0:2] == 'Ud'
 s[4:7] == 'ity'
 s[1:5] == 'daci'
 
+The first and second lines can be replaced with s[:2] and s[4:] – Python infers 
+the position of a missing value as either the start or end of the sequence.
+
+You can even pass a step size:
+
+s[1:5:2] == 'dc'
+s[4::-2] == 'iaU'
+
+This enables a concise, if obscure, technique for reversing a sequence: s[::-1] == 'yticadU' – 
+the expression s[::-1] says "start where you're supposed to, end where you're supposed to, 
+and takes steps of -1 through this sequence," which functionally reverses a sequence.
+
+
 
 
 
