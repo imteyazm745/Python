@@ -1,0 +1,85 @@
+greeting = 'Hello'
+group = "wørld"
+Strings can be concatenated with +:
+
+greeting + ' ' + group + "!" # => 'Hello wørld!'
+However, there are several other ways to format strings:
+
+f"{greeting} {group}!"  # f-strings – interpolate expressions into a string
+"{greeting} {group}!".format(greeting=greeting, group=group)  # string-formatting by named groups
+"{0} {1}!".format(greeting, group)  # string-formatting by positional groups
+"%s %s!" % (greeting, group)  # C-style string-formatting
+
+Multiline Strings
+Multiline string literals can be introduced and closed with three single quotes or three double quotes:
+
+'''A very very
+very very
+very long string.
+'''
+"""Another long
+quite long string.
+"""
+
+Escaping Characters
+Special characters in string literals can be escaped with the \ character. When escaping single- or double-quotes in text, it's often more convenient to choose the string delimiter that makes your text easy to work with.
+
+print('doesn\'t')  # => doesn't
+print("doesn't")   # => doesn't
+
+print('"Yes," he said.')    # => "Yes," he said.
+print("\"Yes,\" he said.")  # => "Yes," he said.
+
+print('"Isn\'t," she said.')  # => "Isn't," she said.
+To avoid escaping, you can prefix the string literal with an r, like r"U\nescaped", whose second character is '\'.
+
+Methods on Strings
+String values also come with a plethora of convenient methods.
+
+greeting = "Hello world! "
+
+greeting.find('lo')   # 3 (-1 if not found)
+greeting.replace('llo', 'y')  # => "Hey world!"
+greeting.startswith('Hell')  # => True
+greeting.isalpha()           # => False (due to '!')
+
+greeting.lower()  # => "hello world! "
+greeting.title()  # => "Hello World! "
+greeting.upper()  # => "HELLO WORLD! "
+
+greeting.strip()  # => "Hello world!"  it will remove space
+greeting.strip('dH !')  # => "ello worl"  it will remove dH !
+Note that str.strip removes any matching characters from the start or end of the string – to remove a substring as a prefix or a suffix, you can write your own function or use str.removeprefix or str.removesuffix introduced in Python 3.9.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
