@@ -18,6 +18,29 @@ Boolean values often arise when making comparisons:
 2 >= 0  # True
 1 < 2 < 3  # True. Computes 1 < 2 and 2 < 3
 
+Noting Nothing
+The Python value False doesn't mean "nothing" – it means "something that is False.
+" In Python, the special value None represents the concept of "nothingness." There is only one None – only one "nothing."
 
+Python has two numeric types: int and float. An int represents a whole number – an integer; whereas a float represents a real number. A float has a decimal point and an int doesn't. The int type can represent integers of unbounded magnitude.
+
+3  # => 3 (int)
+3.0  # => 3.0 (float)
+The binary operators +, -, *, and / perform their mathematical operations. For +, -, and *, the result is an int if and only if both operands are ints. For /, the result is always a float.
+
+1 + 1    # => 2 (int)
+1.0 + 1  # => 2.0 (float)
+8 - 1    # => 7 (int)
+10 * 2   # => 20 (int)
+8 * 2.5  # => 20.0 (float)
+5 / 2    # => 2.5 (float)
+13 / 4   # => 3.25 (float)
+9 / 3    # => 3.0 (float)
+7 / 1.4  # => 5.0 (float)
+
+There are a few other useful mathematical operators:
+7 // 3 # => 2 (int division)
+7 % 3  # => 1 (int modulus)
+3 ** 2 # => 9 (exponentiate)
 
 
