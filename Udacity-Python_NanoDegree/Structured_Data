@@ -1,0 +1,7 @@
+An element of data is some unit of digital information. A collection of data is an aggregation of elements of data – it might contain some elements, might have a known size, and might even be able to produce a stream of its elements.
+Boolean : A data value representing a single bit of information, whether on/off or true/false. 
+Collection : A sized, iterable, container of elements of data.
+Number : A data value representing a mathematical number. either int (integer) or float (real)
+Text : A data value representing text as a sequence of characters.
+A string value represents an immutable sequence of text characters.
+The None value represents nothingness.
