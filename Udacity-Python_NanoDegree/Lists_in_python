@@ -1,4 +1,4 @@
-List : A mutable(can be changed) sequence of heterogenous elements.
+List : A mutable(can be changed) sequence of heterogenous[numbers, letters, and mixes or even lists themselves] elements.
 
 A list is a finite, ordered, mutable sequence of elements. Lists are one of
 the most fundamental, and most useful, collections that Python provides.
@@ -39,12 +39,63 @@ numbers[1] = 100
 
 numbers # => [2, 100, 5, 7, 11]
 
+my_list = [1, 2, 3, 4, 5]
+# Extend list by appending elements from the iterable
+my_list.extend(iterable)
+    my_list.extend(6, 7, 8)
+    my_list #=> [1, 2, 3, 4, 5, 6, 7, 8]
+
+# Insert object before index
+my_list.insert(index, object)
+    my_list.insert(3, 41)
+    my_list  # => [1, 2, 3, 41, 4, 5, 6, 7, 8]
+
+# Remove first occurrence of value, or raise ValueError
+my_list.remove(value)
+    my_list.remove(41)
+    my_list  # => [1, 2, 3, 4, 5, 6, 7, 8]
+
+# check for the length using len() function
+len(my_list) # => 8 
+
+# ask for it containment True means yes False means not in collection
+8 in my_list # =. True [it will check whether 8 is in our collection]
+9 in my_list # => False [because 9 is not present in my_list]
+
+# Remove all items
+my_list.clear() 
+
+# add the values
+my_list.append(value) 
 
 
+# Return number of occurrences of value
+my_list.count(value)
 
+# Return first index of value, or raise ValueError
+my_list.index(value, [start, [stop]])
 
+# Remove, return item at index (def. last) or IndexError
+my_list.pop([index])
 
+# Stable sort *in place*
+my_list.sort(key=None, reverse=False)
 
+# Reverse *in place*.
+my_list.reverse()
+As sequences, lists also support operations that apply to all collections, such as checking its size or checking if an element is contained:
 
+# Length (len)
+len([])  # => 0
+len([4,5,"seconds"])  # => 3
 
+# Membership (in)
+0 in [] # => False
+'minutes' in [4, 5, 'seconds'] # => False
 
+Recap 
+A list is a mutable sequence of data
+    can contain elements of different types
+    append with l.append(elem)
+    assign with l[i] = x
+    remove with l.pop(index) or l.remove(elem)
