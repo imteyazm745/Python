@@ -1,0 +1,23 @@
+A bool value is either False or True, and encodes binary values.
+A number may come in two flavors – either int (integer) or float (real) – and encodes a numeric value.
+A string value represents an immutable sequence of text characters.
+The None value represents nothingness.
+
+not True  # => False
+True and False  # => False
+True or False  # => True.
+
+Boolean values often arise when making comparisons:
+
+1 == 1  # => True
+2 * 3 == 5  # => False
+1 != 1  # => False
+2 * 3 != 5  # => True
+
+1 < 10  # True
+2 >= 0  # True
+1 < 2 < 3  # True. Computes 1 < 2 and 2 < 3
+
+
+
+
