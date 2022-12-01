@@ -50,3 +50,20 @@ Namespaces can be nested – at any moment, Python is aware of at least a local 
 a global namespace mapping global variable names to objects, and a builtin namespace mapping builtin variable names to objects.
 At any time, you can access the local namespace with the locals() built-in function and the global namespace with the globals() built-in function.
 
+Assigning to a Variable
+x = "Hello, world!"
+y = x
+
+Consider the following function:
+def compute(a, b, c):
+    return (a + b) * c
+compute(4, 1, 3)  # => 15
+compute([1], [2, 3], 2) # => [1, 2, 3, 1, 2, 3]
+compute('l', 'olo', 4)  # => 'lolololololololo'
+
+Assignment :	The process by which Python assigns a value to a name.
+Duck Typing :	A philosophy promoting interface-based design, widely adopted in the design of Python.
+Dynamic Typing :	Python's approach to type systems, in which objects have types, but variables (names) are untyped.
+Name :	A text variable name that refers to an object.
+Name Resolution :	The process by which Python resolves a name to an object value to which it refers.
+Namespace :	An associative mapping between names and objects, used to resolve names to the object values to which they refer.
