@@ -37,47 +37,53 @@ contained within those objects was updated in-place, appending a 4 to the first 
 id(v[0]) #=> some identities example 4478665834
 id(v[1])  #=>  some identities example 4478623546
 
+Packing and Unpacking
+Any comma-separated values are packed into a tuple:
+t = 12345, 54321, 'hello!'
+print(t)  # (12345, 54321, 'hello!')
+type(t)  # => tuple
 
+Any comma-separated names unpack a tuple of values (which must be of the same size)
+x, y, z = t
+x  # => 12345
+y  # => 54321
+z  # => 'hello!'
 
+There are a few options for variable-length tuple unpacking, whose complexity is mostly out-of-scope. The most common pattern is:
+first, *rest = 1, 2, 3, 4, 5
+print(first)  # => 1
+print(rest)  # => [2, 3, 4, 5]
 
+Tuple packing and unpacking is surprisingly prevalent in Python:
+Suppose that we have x = 5 and y = 6 and we'd like to swap the values so that x = 6 and y = 5. We might introduce a temporary variable:
+temp = x
+x = y
+y = temp
 
+If we're feeling fancy, we can swap the values using the xor operator:
+x = x ^ y
+y = x ^ y
+x = x ^ y
 
+However, Python's tuple packing and unpacking behavior provides a simpler syntax:
+x, y = y, x
 
+This sort of patterned destructuring can be useful when making dependent updates on values, such as in computing Fibonacci numbers.
+a, b = 0, 1
+for i in range(10):
+    print(i, a)
+    a, b = b, a + b # => 0 0, 1 1, 2 1, 3 2, 4 3, 5 5, 6 8, 7 13, 8 21, 9 34
+Tuple unpacking also makes an appearance in a built-in looping method: enumerate, which produces an iterator of pairs of (index, value) from an iterable of values:
+for index, color in enumerate(['red','green','blue']):
+    print(index, color)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# =>
+# 0 red
+# 1 green
+# 2 blue
+The existence of this function means that you should almost never use for i in range(len(sequence)) to get indices to use to index into a sequence.
+Recap 
+A tuple is a immutable sequence of data
+	Can contain elements of different types
+	Cannot assign to or modify
+	Often useful to pack or unpack multiple values
