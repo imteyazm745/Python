@@ -18,7 +18,24 @@ len(fish)  # => 4
 fish[:2]  # => (1, 2)
 "red" in fish  # => True
 
+There are a few quirks when working with tuples:
+empty = ()
+len(empty)      # => 0
 
+singleton = ("value",)
+plain_string = "value"  # Note plain_string != singleton
+len(singleton)  # => 1
+
+# Tuples contain (immutable) references to underlying objects!
+v = ([1, 2, 3], ['a', 'b', 'c'])
+v[0].append(4)
+v  # => ([1, 2, 3, 4], ['a', 'b', 'c'])
+
+In the second case, the identity of the objects contained by the tuple didn't change – but the data 
+contained within those objects was updated in-place, appending a 4 to the first list.
+
+id(v[0]) #=> some identities example 4478665834
+id(v[1])  #=>  some identities example 4478623546
 
 
 
