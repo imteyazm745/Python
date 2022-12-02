@@ -1,0 +1,8 @@
+A tuple is a fixed-size immutable[can’t change its values] sequence of arbitrary data.
+pet = (1, ‘dog’)
+pet[0]  # => 1
+pet[1]  # => ‘dog
+The pet value is a 2-tuple whose value at position 0 is the integer 1 
+and whose value at position 1 is the string 'dog'
+
+Tuples support all of the methods of a Sequence, which practically means that they behave almost exactly like a list, except that the collection is immutable.
