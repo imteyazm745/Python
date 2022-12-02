@@ -5,4 +5,62 @@ pet[1]  # => ‘dog
 The pet value is a 2-tuple whose value at position 0 is the integer 1 
 and whose value at position 1 is the string 'dog'
 
-Tuples support all of the methods of a Sequence, which practically means that they behave almost exactly like a list, except that the collection is immutable.
+Tuples support all of the methods of a Sequence, which practically means that 
+they behave almost exactly like a list, except that the collection is immutable.
+
+fish = (1, 2, "red", "blue")  # Create a tuple.
+
+fish[0]  # => 1
+fish[0] = 7  # Raises a TypeError. Tuples are immutable!
+
+# Usual sequence methods work.
+len(fish)  # => 4
+fish[:2]  # => (1, 2)
+"red" in fish  # => True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
