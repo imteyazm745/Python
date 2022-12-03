@@ -46,3 +46,30 @@ ky_temps = temps.get('KY', [])
 num_observations = len(ky_temps)
 The .get method, when passed a nonexistent key as the first argument, returns None (by default) or its second argument if specified. This allows us to write code that is robust to a variety of circumstances.
 
+Removing Elements
+There are a few techniques for removing elements from a dictionary:
+d = {"one": 1, "two": 2, "three": 3}
+# Raises a KeyError if the key is missing.
+del d["one"]
+# Remove and return `d['three']`, or the default value if 'three' is not in the map.
+d.pop("three", default)  # => 3
+# Remove and return an arbitrary (key, value) pair. Useful for destructive iteration.
+d.popitem()  # => ("two", 2)
+You can also explicitly use the .clear() method to wipe a dictionary clean.
+Views
+A dictionary also provides methods to access views of only its keys, only its values, or only its items (as a pair of (key, value) tuples).
+d = {"one": 1, "two": 2, "three": 3}
+d.keys()
+d.values()
+d.items()
+ 
+Each of the returned objects is a subtype of MappingView, an abstract type that supports, among other operations, len(view), iter(view), and x in view. This enables the following code:
+len(d.keys())  # => 3
+('one', 1) in d.items()  # => True
+for value in d.values():
+    print(value)  # Prints 1, 2, and 3
+keys_list = list(d.keys())  # Create a new list, decoupled from the changes to the original dict.
+Note that iterating over a dictionary produces elements from its collection of keys – if you want to loop over key:value pairs, you'll likely use the following pattern:
+for key, value in mydict.items():
+    do_something_with(key, value)
+ 
