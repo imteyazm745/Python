@@ -38,4 +38,44 @@ Any object that is a Container can be used in the expression element in containe
 12 in [5, 12, 13]  # => True
 (3, 4, 5) in ((3, 4, 5), (5, 12, 13), (6, 8, 10), (7, 24, 25))  # => True
 
+Iterable
+Any object that is an Iterable knows how to produce its elements one at a time in a stream. An extraordinary number of built-in functions consume or produce iterables. For example, if we had an iterable named iterable or an iterable of iterables named iterables, we could run:
+max(iterable)
+min(iterable)
+ 
+val in iterable
+val not in iterable
+ 
+all(iterable)
+any(iterable)
+ 
+# Produce iterables.
+zip(*iterables)
+enumerate(iterable)
+ 
+filter(pred, iterable)
+map(fn, iterable)
+Slicing Strings
+hello = 'Hello, world!'
+a = hello[0]
+b = hello[-2]
+c = hello[1:5]
+d = hello[-6:]
+e = hello[::2]
+f = hello[::-1]
+Palindrome
+def make_palindrome(s):
+    return s + s[::-1]   
+Pascal's Triangle
+def add_layer(triangle):
+    last = triangle[-1]  # The most recent row of Pascal's triangle.
+    row = []  # Build up the next row.
+    for left, right in zip(last + (0,), (0,) + last):
+        row.append(left + right)
+    triangle.append(tuple(row))
+The next row could have also been computed using a comprehension:
+def add_layer(triangle):
+    last = triangle[-1]
+    triangle.append(tuple(left + right for left, right in zip(last + (0,), (0,)
+ 
 
