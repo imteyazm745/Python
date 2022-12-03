@@ -22,5 +22,16 @@ f = dict({'one': 1, 'three': 3}, two=2)
 a == b == c == d == e == f  # => True
 The first case requires the keys to be valid Python identifiers, but all other constructors accept arbitrary hashable keys.
 
+Access and Modify a Mapping
+Python's dicts are mutable – we can access and modify the pairings contained within:
+d = {"one": 1, "two": 2, "three": 3}
+ 
+# Access
+d['one']  # => 1
+d['five']  # Raises an error (KeyError)!
+ 
+# Modify
+d['two'] = 22  # Modify an existing key
+d['four'] = 4  # Add a new key
 
 
