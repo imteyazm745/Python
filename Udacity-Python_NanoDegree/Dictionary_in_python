@@ -12,4 +12,15 @@ empty = {}
 type(empty)      # => dict
 empty == dict()  # => True
 
+# Create a dictionary with key:value pairings.
+a = dict(one=1, two=2, three=3)
+b = {'one': 1, 'two': 2, 'three': 3}
+c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+d = dict([('two', 2), ('one', 1), ('three', 3)])
+e = dict({'three': 3, 'one': 1, 'two': 2})
+f = dict({'one': 1, 'three': 3}, two=2)
+a == b == c == d == e == f  # => True
+The first case requires the keys to be valid Python identifiers, but all other constructors accept arbitrary hashable keys.
+
+
 
