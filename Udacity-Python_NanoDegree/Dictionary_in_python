@@ -1,0 +1,15 @@
+Mappings
+A mapping is a mutable map from hashable values to arbitrary objects. There is just one standard mapping type – dict – although a few more live in the collections module.
+Mappings are often used for:
+Encoding associative information
+Capturing plain data with named fields.
+Building more complicated data structures.
+Dictionary : It’s this mutable association between keys and value.
+Creating a dict
+There are many ways to create a dictionary:
+# Create an empty dictionary.
+empty = {}
+type(empty)      # => dict
+empty == dict()  # => True
+
+
