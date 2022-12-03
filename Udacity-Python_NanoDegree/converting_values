@@ -14,3 +14,28 @@ tuple(range(5))  # => (0, 1, 2, 3, 4)
 Recall that, when interpreted as an iterable, a string produces a stream of its characters. That is:
 list("ABC")  # => ["A", "B", "C"]
 tuple("XYZ")  # => ("X", "Y", "Z")
+
+Special Case: .split and .join – Converting from str to list or from an Iterable to str.
+It's common to need to convert between strings and lists. Python provides two great tools here:
+# `split` partitions a string by a delimiter into a list
+'ham cheese bacon'.split()
+# => ['ham', 'cheese', 'bacon']
+'03-30-2016'.split(sep='-')
+# => ['03', '30', '2016']
+
+# `join` creates a string from an iterable (of strings)
+', '.join(['Eric', 'John', 'Michael'])
+# => "Eric, John, Michael"
+Sized
+Any object that is Sized can be used with the len function, which returns the number of items in a container. For example:
+len("ABC")  # => 3
+len((1, 2, 4, 8))  # => 4
+len(["do", "re", "mi", "fa", "so"])  # => 5
+ 
+Container
+Any object that is a Container can be used in the expression element in container. For example:
+'d' in 'Udacity'  # => True
+12 in [5, 12, 13]  # => True
+(3, 4, 5) in ((3, 4, 5), (5, 12, 13), (6, 8, 10), (7, 24, 25))  # => True
+
+
