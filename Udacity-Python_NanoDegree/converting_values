@@ -1,0 +1,16 @@
+Converting Values
+As with the fundamental building blocks, these types can be constructed from one another.
+The str constructor accepts any object and returns a string representation of that object:
+str([3, 4, 5])  # => '[3, 4, 5]'
+str((1, 4, 9))  # => '(1, 4, 9)'
+The universality of string representations will reappear when we discuss custom classes.
+The list and tuple constructors can be constructed as empty, or constructed with the elements of another iterable:
+list()  # An empty list.
+tuple()  # An empty tuple.
+
+list(range(5))  # => [0, 1, 2, 3, 4]
+tuple(range(5))  # => (0, 1, 2, 3, 4)
+ 
+Recall that, when interpreted as an iterable, a string produces a stream of its characters. That is:
+list("ABC")  # => ["A", "B", "C"]
+tuple("XYZ")  # => ("X", "Y", "Z")
