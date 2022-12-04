@@ -1,0 +1,45 @@
+Sets
+A set is an unordered collection of distinct hashable elements.
+Sets are often used for:
+    Efficiently checking if an element is contained in a collection.
+    Eliminating duplicate entries from a collection.
+    Representing abstract sets, with access to mathematical operators such as intersection and union.
+
+A set looks like this:
+s = {1, 3, 4}
+
+A set is delimited by curly braces, and its elements are separated by commas.
+Creating a Set
+A set can be built either as an empty collection, or from an iterable of elements:
+empty_set = set()
+set_from_list = set([1, 2, 3, 2, 3, 4, 3, 1, 2]) # => {1, 2, 3, 4}
+
+In the above snippet, why do I create an empty set using set() and not {}?
+Common Set Operations
+As an iterable type, a set supports the usual operations that work with iterables, such as checking the size of the set, checking for element containment, and looping over it:
+# A basket of fruit names.
+basket = {"apple", "orange", "apple", "pear", "banana"}
+
+# How many unique fruit names are there?
+len(basket)            # => 4
+
+# Does the basket contain these elements?
+"orange" in basket     # => True
+"crabgrass" in basket  # => False
+
+# Loop over the elements of the basket.
+for fruit in basket:
+    print(fruit)  # prints 'apple', 'banana', 'orange', and 'pear'.
+
+Due to how set is implemented in Python, it's relatively efficient to evaluate the expression elem in basket.
+Set Operations
+Sets in Python can be modified by adding, removing, or discarding elements, among other operations:
+a = set("mississippi")  # {'i', 'm', 'p', 's'}
+
+a.add('r')
+a.remove('m')  # Raises a KeyError if 'm' is not present.
+a.discard('x')  # Same as `remove`, except will not raise an error.
+
+a.pop()  # => 's' (or 'i' or 'p')
+a.clear()
+len(a)  # => 0
