@@ -1,4 +1,4 @@
-Sets
+Sets A mutable set of unordered, distinct, hashable elements.
 A set is an unordered collection of distinct hashable elements.
 Sets are often used for:
     Efficiently checking if an element is contained in a collection.
@@ -16,7 +16,8 @@ set_from_list = set([1, 2, 3, 2, 3, 4, 3, 1, 2]) # => {1, 2, 3, 4}
 
 In the above snippet, why do I create an empty set using set() and not {}?
 Common Set Operations
-As an iterable type, a set supports the usual operations that work with iterables, such as checking the size of the set, checking for element containment, and looping over it:
+As an iterable type, a set supports the usual operations that work with iterables, such as checking the size of the set, 
+checking for element containment, and looping over it:
 # A basket of fruit names.
 basket = {"apple", "orange", "apple", "pear", "banana"}
 
@@ -43,3 +44,39 @@ a.discard('x')  # Same as `remove`, except will not raise an error.
 a.pop()  # => 's' (or 'i' or 'p')
 a.clear()
 len(a)  # => 0
+
+Sets donot support access by index
+a[0]  # => it will give error
+a[::2]    # => it will give error
+
+Sets also support mathematical operations such as intersection and union, 
+many of which overload the meaning of Python's binary operators:
+a = set("abracadabra")  # {'a', 'b', 'c', 'd', 'r'}
+b = set("alacazam")     # {'a', 'm', 'c', 'l', 'z'}
+
+# Set difference
+a - b # => {'b', 'd', 'r'}
+
+# Union
+a | b  # => {'a', 'b', 'c', 'd', 'l', 'm', 'r', 'z'}
+
+# Intersection
+a & b # => {'a', 'c'}
+
+# Symmetric Difference
+a ^ b  # => {'b', 'd', 'l', 'm', 'r', 'z'}
+
+# Subset
+a <= b  # => False
+
+There are also named versions of these functions: set.difference, set.union, set.intersection, 
+set.symmetric_difference, and set.issubset, as well as in-place versions set.difference_update, set.update, 
+set.intersection_update, and set.symmetric_difference_update, corresponding to the operators -=, |=, &=, and ^=.
+
+Primary Motivations
+Eliminate(ignore) duplicate elements
+Test for membership efficiently
+Perform mathematical set operations (insertion, union, etc.)
+
+
+
