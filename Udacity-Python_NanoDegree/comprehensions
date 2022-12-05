@@ -1,0 +1,12 @@
+List Comprehensions
+A list comprehension is a concise way to create and populate a list in Python in a declarative, rather than imperative, fashion. Consider the following code snippet to produce a list of the first 100 perfect squares:
+squares = []
+for x in range(10):
+    squares.append(x ** 2)  # =>  [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+
+
+
+
+
+
