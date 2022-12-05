@@ -4,6 +4,9 @@ squares = []
 for x in range(10):
     squares.append(x ** 2)  # =>  [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
+Really, what we'd like to describe is that we'd like a list of the squares of the first 100 elements – Python provides a syntactic tool to abbreviate this common pattern:
+[x ** 2 for x in range(10)] # =>  [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
 
 
 
