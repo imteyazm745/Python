@@ -33,5 +33,19 @@ List comprehensions are remarkably useful for capturing a wide variety of data t
 # Indices for a triangular matrix.
 [(i,j) for i in range(5) for j in range(i)]
 
+Dictionary Comprehensions
+The syntax {key_func(vars): value_func(vars) for vars in iterable} creates a dictionary mapping keys to values. It's equivalent to the following code:
+d = {}
+for vars in iterable:
+    d[key_func(vars)] = value_func(vars)
+return d
+
+For example, to swap the keys and values in a dictionary,* we can use the expression:
+return {v: k for k, v in d.items()}
+
+As before, there can be optional predicates tacked onto the end: {key_func(vars): val_func(vars) for vars in iterable if predicate_func(vars)}.
+For example, the expression {student: grades for student, grades in gradebook.items() if sum(grades) / len(grades) > 90 builds a dictionary of student grades for students whose average grade is at least 90.**
+What happens if multiple keys map to the same value? Try it out in the interactive interpreter.
+What would happen if a student exists, but has no grades, in the gradebook? How could you modify the dictionary expression to avoid this case?
 
 
