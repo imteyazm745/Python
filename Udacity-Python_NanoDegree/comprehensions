@@ -7,8 +7,17 @@ for x in range(10):
 Really, what we'd like to describe is that we'd like a list of the squares of the first 100 elements – Python provides a syntactic tool to abbreviate this common pattern:
 [x ** 2 for x in range(10)] # =>  [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
+The general structure of a list comprehension is:
+[f(xs) for xs in iter]; Example [x ** 2 for x in range(100)]
+The square brackets indicate that we're building a list. To write a list comprehension, we need both an iterable over which we'll iterate as well as an expression that transforms each element of the iterable to generate the new list elements.
+In some cases, we might want to only keep elements that satisfy a predicate condition. For example, we could construct a list of only the even perfect squares:
+[x ** 2 for x in range(10) if x % 2 == 0] # =>  [0, 4, 16, 36, 64]
 
+# => for set
+{x ** 2 for x in range(10) if x % 2 == 0} # => set {0, 4, 16, 36, 64}
 
+# => for dictionary
+{x: x ** 2 for x in range(10) if x % 2 == 0} # => {0: 0, 2: 4, 4: 16, 6:36, 8: 64}
 
 
 
