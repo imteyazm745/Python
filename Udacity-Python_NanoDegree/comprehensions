@@ -19,6 +19,19 @@ In some cases, we might want to only keep elements that satisfy a predicate cond
 # => for dictionary
 {x: x ** 2 for x in range(10) if x % 2 == 0} # => {0: 0, 2: 4, 4: 16, 6:36, 8: 64}
 
+Examples
+List comprehensions are remarkably useful for capturing a wide variety of data transformations.
+# Lowercased versions of words in a sentence.
+[word.lower() for word in sentence]
+
+# Words in a sentence of more than 8 letters long.
+[word for word in sentence if len(word) > 8]
+
+# 3-tuples of the first ten numbers and their squares and cubes.
+[(x, x ** 2, x ** 3) for x in range(10)]
+
+# Indices for a triangular matrix.
+[(i,j) for i in range(5) for j in range(i)]
 
 
 
