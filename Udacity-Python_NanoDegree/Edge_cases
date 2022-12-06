@@ -10,4 +10,9 @@ Non-Topics
 frozenset: A concrete type representing an immutable Set, whose hashable instances can be used as elements in sets or as keys in dictionaries.
 Using the nonlocal and global statements – instruct the parser to change the behavior of binding new variable assignments to the local namespace.
 
-
+bytes and bytearray : 
+Alternative sequence types for representing sequences of bytes, rather than sequences of characters (str).
+collections.Counter : A dict subclass for counting hashable objects.
+collections.defaultdict : A dict subclass that calls a factory function to supply missing values.
+collections.namedtuple : A factory function for creating tuple subclasses with named fields.
+The collections module : An incredibly useful built-in Python module providing specialized container types.
