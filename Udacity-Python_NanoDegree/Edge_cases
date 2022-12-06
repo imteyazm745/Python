@@ -5,5 +5,9 @@ collections.defaultdict – dict subclass that calls a factory function to suppl
 collections.Counter – dict subclass for counting hashable objects
 These objects are particularly useful for making your code simpler or more readable, and tend to crush interview problems.
 
+Non-Topics
+
+frozenset: A concrete type representing an immutable Set, whose hashable instances can be used as elements in sets or as keys in dictionaries.
+Using the nonlocal and global statements – instruct the parser to change the behavior of binding new variable assignments to the local namespace.
 
 
