@@ -1,0 +1,9 @@
+Additional Collections
+So far, we looked at a few of the built-in types in Python's language. However, Python's standard library includes the collections module, which provides a few more useful, specialized container types.
+collections.namedtuple – factory function for creating tuple subclasses with named fields
+collections.defaultdict – dict subclass that calls a factory function to supply missing values
+collections.Counter – dict subclass for counting hashable objects
+These objects are particularly useful for making your code simpler or more readable, and tend to crush interview problems.
+
+
+
