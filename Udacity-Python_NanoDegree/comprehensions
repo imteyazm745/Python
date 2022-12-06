@@ -93,3 +93,23 @@ dictionary of student grades for students whose average grade is at least 90.**
 What happens if multiple keys map to the same value? Try it out in the interactive interpreter.
 What would happen if a student exists, but has no grades, in the gradebook? How could you modify the dictionary expression to avoid this case?
 
+Set Comprehensions
+Set comprehensions are pretty similar to list comprehensions. The only difference between them is that set comprehensions use curly brackets { }. 
+Example #1 : Suppose we want to create an output set which contains only the even numbers that are present in the input list. 
+Note that set will discard all the duplicate values. Let’s see how we can do this using for loops and set comprehension.
+# Using Set comprehensions 
+# for constructing output set
+  
+input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
+set_using_comp = {var for var in input_list if var % 2 == 0}
+print("Output Set using set comprehensions:", set_using_comp)                          
+    Output Set using set comprehensions: {2, 4, 6}
+  
+Set comprehensions work in a similar way – here, the expression on the left side is not a key:value mapping, but any element.
+The general pattern of a set comprehension is {func(vars) for vars in iterable} or, with a predicate, {func(vars) for vars in iterable if predicate(vars)}
+For example, suppose that we have a list of words from Shakespeare's Hamlet, and a predicate function is_palindrome that returns whether a string is a palindrome.
+To evaluate a collection of unique palindromes in Hamlet, we can use the set comprehension {word for word in hamlet if is_palindrome(word.lower())}.
+
+Dictionary Comprehension : A concise, syntactical shortcut for creating and populating a dict.
+List Comprehension : A concise, syntactical shortcut for creating and populating a list.
+Set Comprehension : A concise, syntactical shortcut for creating and populating a set.
