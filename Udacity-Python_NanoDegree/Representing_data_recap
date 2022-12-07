@@ -1,0 +1,7 @@
+Assignment :	The process by which Python assigns a value to a name.
+bool :	A binary type with type values: False and True.
+Boolean :	A data value representing a single bit of information, whether on/off or true/false.
+bytes and bytearray :	Alternative sequence types for representing sequences of bytes, rather than sequences of characters (str).
+Collection :	A sized, iterable, container of elements of data.
+The collections module :	An incredibly useful built-in Python module providing specialized container types.
+collections.Counter :	A dict subclass for counting hashable objects.
