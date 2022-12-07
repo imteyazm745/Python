@@ -74,3 +74,13 @@ Water
 Bottled Water 10 50
 
 
+success = True 
+if success: 
+    description = 'You won!' 
+else: 
+    description = 'You lost :(' 
+description           
+'You won!'
+
+description is available outside of the if statement!
+
