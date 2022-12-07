@@ -33,3 +33,15 @@ a,b,c = multiple_return()
 print(a) # => 5
 print(b) # => 6
 print(c) # => 7
+
+SCOPE 
+
+x = 2                                                                                                                                                                                         
+def fun(y): 
+    z = 5 
+    print(locals())  # =>  {'y': 3, 'z': 5}
+# The locals() symbol table contains a mapping for the variable names 'y' (from the function's parameter) and 'z' (from the function's local variable).
+    print(globals()['x'])  # => 2
+        # => The globals() symbol table contains a mapping for the variable name 'x'.
+    print(x, y, z)  # => 2 3 5 
+fun(3)   
