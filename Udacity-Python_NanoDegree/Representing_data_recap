@@ -13,3 +13,13 @@ Dictionary Comprehension	A concise, syntactical shortcut for creating and popula
 Dictionary View	An abstract supertype of views into a dictionary's keys, values, or items.
 Duck Typing	A philosophy promoting interface-based design, widely adopted in the design of Python.
 Dynamic Typing	Python's approach to type systems, in which objects have types, but variables (names) are untyped.
+Element	A unit of data, framed as indivisible.
+float	A numeric type representing real numbers.
+int	A numeric type representing whole numbers.
+Iterable	An object that can produce a stream of elements of data.
+list	A mutable sequence of heterogeneous data.
+List Comprehension	A concise, syntactical shortcut for creating and populating a list.
+Mapping	An unordered collection associating elements of data (keys) to other elements of data (values).
+Mutable	A property of a data collection where the top-level collection can be changed.
+Name	A text variable name that refers to an object.
+Name Resolution	The process by which Python resolves a name to an object value to which it refers.
