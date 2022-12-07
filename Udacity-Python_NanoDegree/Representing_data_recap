@@ -5,39 +5,39 @@ bytes and bytearray :	Alternative sequence types for representing sequences of b
 Collection :	A sized, iterable, container of elements of data.
 The collections module :	An incredibly useful built-in Python module providing specialized container types.
 collections.Counter :	A dict subclass for counting hashable objects.
-collections.defaultdict	A dict subclass that calls a factory function to supply missing values.
-collections.namedtuple	A factory function for creating tuple subclasses with named fields.
-Container	An object that holds elements of data.
-dict	A mutable mapping of hashable values to arbitrary objects.
-Dictionary Comprehension	A concise, syntactical shortcut for creating and populating a dict.
-Dictionary View	An abstract supertype of views into a dictionary's keys, values, or items.
-Duck Typing	A philosophy promoting interface-based design, widely adopted in the design of Python.
-Dynamic Typing	Python's approach to type systems, in which objects have types, but variables (names) are untyped.
-Element	A unit of data, framed as indivisible.
-float	A numeric type representing real numbers.
-int	A numeric type representing whole numbers.
-Iterable	An object that can produce a stream of elements of data.
-list	A mutable sequence of heterogeneous data.
-List Comprehension	A concise, syntactical shortcut for creating and populating a list.
-Mapping	An unordered collection associating elements of data (keys) to other elements of data (values).
-Mutable	A property of a data collection where the top-level collection can be changed.
-Name	A text variable name that refers to an object.
-Name Resolution	The process by which Python resolves a name to an object value to which it refers.
-Namespace	An associative mapping between names and objects, used to resolve names to the object values to which they refer.
-None	A singleton value representing nothingness.
-Number	A data value representing a mathematical number.
-Object	A fundamental type that represents all objects in Python.
-Object Identity	A unique numeric value that identifies a specific object.
-Object Type	A category of a specific object.
-Schema	A representation or outline of a data model.
-Sequence	An ordered collection of data.
-Set	An unordered collection of unique data elements.
-set	A mutable set of unordered, distinct, hashable elements.
-Set Comprehension	A concise, syntactical shortcut for creating and populating a set.
-Sized	An object that has a finite size.
-Slicing	Special syntax for accessing or updating elements or subsequences of data from a sequence type.
-str	A type representing a text value; An immutable sequence of characters.
-Structured Data	Information to which we assign meaning through organization.
-Text	A data value representing text as a sequence of characters.
-Truthiness	The property that every Python object is implicitly convertible to a boolean value.
-tuple	An immutable sequence of heterogeneous data.
+collections.defaultdict :	A dict subclass that calls a factory function to supply missing values.
+collections.namedtuple :	A factory function for creating tuple subclasses with named fields.
+Container :	An object that holds elements of data.
+dict :	A mutable mapping of hashable values to arbitrary objects.
+Dictionary Comprehension :	A concise, syntactical shortcut for creating and populating a dict.
+Dictionary View :	An abstract supertype of views into a dictionary's keys, values, or items.
+Duck Typing :	A philosophy promoting interface-based design, widely adopted in the design of Python.
+Dynamic Typing :	Python's approach to type systems, in which objects have types, but variables (names) are untyped.
+Element :	A unit of data, framed as indivisible.
+float :	A numeric type representing real numbers.
+int :	A numeric type representing whole numbers.
+Iterable :	An object that can produce a stream of elements of data.
+list :	A mutable sequence of heterogeneous data.
+List Comprehension :	A concise, syntactical shortcut for creating and populating a list.
+Mapping :	An unordered collection associating elements of data (keys) to other elements of data (values).
+Mutable :	A property of a data collection where the top-level collection can be changed.
+Name :	A text variable name that refers to an object.
+Name Resolution :	The process by which Python resolves a name to an object value to which it refers.
+Namespace :	An associative mapping between names and objects, used to resolve names to the object values to which they refer.
+None :	A singleton value representing nothingness.
+Number :	A data value representing a mathematical number.
+Object :	A fundamental type that represents all objects in Python.
+Object : Identity	A unique numeric value that identifies a specific object.
+Object Type :	A category of a specific object.
+Schema :	A representation or outline of a data model.
+Sequence :	An ordered collection of data.
+Set :	An unordered collection of unique data elements.
+set :	A mutable set of unordered, distinct, hashable elements.
+Set Comprehension :	A concise, syntactical shortcut for creating and populating a set.
+Sized :	An object that has a finite size.
+Slicing :	Special syntax for accessing or updating elements or subsequences of data from a sequence type.
+str :	A type representing a text value; An immutable sequence of characters.
+Structured Data :	Information to which we assign meaning through organization.
+Text :	A data value representing text as a sequence of characters.
+Truthiness :	The property that every Python object is implicitly convertible to a boolean value.
+tuple :	An immutable sequence of heterogeneous data.
