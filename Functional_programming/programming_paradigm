@@ -1,0 +1,32 @@
+Programming Paradigms
+As an extreme oversimplification, there are (four) major programming paradigms – conceptual frameworks within which to write programs:
+
+1. Procedural
+Problems are solved by writing programs as a sequence of instructions. Everything is written as a step-by-step algorithms.
+Procedural languages were some of the first, and most popular programming languages, because procedural thinking mirrors
+the way that programs are actually executed on standard hardware.
+Languages: C, Pascal, sh
+
+2. Declarative
+Problems are solved by formally describing the characteristics of the solution you want.
+Unlike procedural thinking, declarative programs might not precisely write how to solve a problem, but rather, the form of the solution. 
+It's then up to the language implementation to determine how to produce the requested results.
+Languages: SQL, Prolog
+
+3. Object-Oriented
+Problems are solved by defining several categories of nouns and formalizing the way that they interact.
+To an object-oriented programmer, everything is an object that can interact with other objects.
+Languages: Java, Smalltalk
+
+4. Functional
+Problems are solved by composing a chain of functional units that, collectively, transform an input in some desired way.
+To a functional programmer, the world looks like a collection of verbs, whose arrangement can cleverly solve any problem.
+Languages: Haskell, OCaml, ML
+
+You'll notice that Python isn't on this list – that's because Python, along with other 
+popular programming languages,can be classified as multi-paradigm.
+
+5. Multi-Paradigm
+Tools are available for any style of programming.
+It's up to the programmer to mix-and-match pieces appropriately, according to the needs of a specific challenge.
+Languages: Python, C++, Scala
