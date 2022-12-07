@@ -56,3 +56,21 @@ def broken_fun(y):
     print(globals()['x'])  # => 2
     print(x, y, z)  # => 41 3 5 
 broken_fun(3)   
+
+Example3 : 
+product = 'Water'
+
+def shadowing_example(price):
+    product = 'Bottled Water'  # Oops! Same name as in the global scope.
+    quantity = 50
+    print(locals())  # A
+    print(globals()['product'])  # B
+    print(product, price, quantity)  # C 
+shadowing_example(10)
+
+O/P-
+{'price': 10, 'product': 'Bottled Water', 'quantity': 50}
+Water
+Bottled Water 10 50
+
+
