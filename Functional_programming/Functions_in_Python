@@ -1,0 +1,35 @@
+Functions : Recall that the def keyword is used to define a new function:
+
+def fn_name(param1, param2):
+    value = do_something()
+    return value
+    
+Return
+All functions calls return one object, although that object might be None (signifying no value) or a tuple containing multiple elements (signifying multiple values).
+
+If there is no return statement, or just a bare return, the object returned is None.
+
+Sometimes, it's correct to return multiple values from a function. For this, you can return a tuple of values: return value1, value2, value3. 
+Beware that callers may not expect a tuple as a return value, so if you take this approach, you should document it well.
+
+def no_return():
+    pass
+x = no_return()
+print(x)  # => None
+
+def empty_return():
+    return
+y = empty_return()
+print(y) # => None
+
+def normal_return():
+    return 5
+z = normal_return()
+print(z) # => 5
+
+def multiple_return():
+    return 5, 6, 7
+a,b,c = multiple_return()
+print(a) # => 5
+print(b) # => 6
+print(c) # => 7
