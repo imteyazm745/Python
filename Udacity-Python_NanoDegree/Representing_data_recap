@@ -5,3 +5,11 @@ bytes and bytearray :	Alternative sequence types for representing sequences of b
 Collection :	A sized, iterable, container of elements of data.
 The collections module :	An incredibly useful built-in Python module providing specialized container types.
 collections.Counter :	A dict subclass for counting hashable objects.
+collections.defaultdict	A dict subclass that calls a factory function to supply missing values.
+collections.namedtuple	A factory function for creating tuple subclasses with named fields.
+Container	An object that holds elements of data.
+dict	A mutable mapping of hashable values to arbitrary objects.
+Dictionary Comprehension	A concise, syntactical shortcut for creating and populating a dict.
+Dictionary View	An abstract supertype of views into a dictionary's keys, values, or items.
+Duck Typing	A philosophy promoting interface-based design, widely adopted in the design of Python.
+Dynamic Typing	Python's approach to type systems, in which objects have types, but variables (names) are untyped.
