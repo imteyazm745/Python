@@ -73,6 +73,7 @@ O/P-
 Water
 Bottled Water 10 50
 
+More About Scope
 
 success = True 
 if success: 
@@ -80,8 +81,22 @@ if success:
 else: 
     description = 'You lost :(' 
 print(description)  # => 'You won!'    
+    description is available outside of the if statement!
 
-description is available outside of the if statement!
+def append_4(lst):
+    lst.append(4)
+x = []
+append_4(x)
+append_4(x)
+append_4(x)
+print(x)  # =>  # => [4, 4, 4]
+
+Recap: 
+All functions return a value - perhaps implicitly none, perhaps a tuple 
+function execution introduces a new local symbol table
+    variable ssignments are to the local scope
+    name resolution checks nested namespaces outwards from the local scope
+ Variables (references to objects) re copied into the local symbol table
 
 globals() :	A Python builtin function call that returns a dictionary representation of the global namespace.
 locals() :	A Python builtin function call that returns a dictionary representation of the local namespace.
