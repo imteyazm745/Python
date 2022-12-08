@@ -79,8 +79,7 @@ if success:
     description = 'You won!' 
 else: 
     description = 'You lost :(' 
-description           
-'You won!'
+print(description)  # => 'You won!'    
 
 description is available outside of the if statement!
 
