@@ -72,4 +72,3 @@ keys_list = list(d.keys())  # Create a new list, decoupled from the changes to t
 Note that iterating over a dictionary produces elements from its collection of keys – if you want to loop over key:value pairs, you'll likely use the following pattern:
 for key, value in mydict.items():
     do_something_with(key, value)
- 
