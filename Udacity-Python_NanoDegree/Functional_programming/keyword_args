@@ -32,3 +32,22 @@ parrot('a million', 'bereft of life', 'jump')
 
 # 1 positional, 1 keyword
 parrot('a thousand', state='pushing up the daisies')
+
+Invalid Calls
+def parrot(voltage, state='...', action='...', type='...')
+
+# Missing a required argument.
+parrot()
+
+# Non-keyword argument after a keyword argument.
+parrot(voltage=5.0, 'dead')
+
+# Duplicate value for the same argument.
+parrot(110, voltage=220)
+
+# Unknown keyword argument.
+parrot(actor='John Cleese')
+
+
+
+
