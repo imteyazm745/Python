@@ -1,5 +1,7 @@
 Mappings
-A mapping is a mutable map from hashable values to arbitrary objects. There is just one standard mapping type – dict – although a few more live in the collections module.
+A mapping is a mutable map from hashable values to arbitrary objects. 
+There is just one standard mapping type – dict – although a few more live in the collections module.
+
 Mappings are often used for:
 Encoding associative information
 Capturing plain data with named fields.
@@ -35,7 +37,9 @@ d['two'] = 22  # Modify an existing key
 d['four'] = 4  # Add a new key
 
 Get with Default
-In some cases, you'll want to either get the value associated with a key, or a default value if it's missing, rather than raising a KeyError. In these cases, you can use dict.get:
+In some cases, you'll want to either get the value associated with a key, or a default value 
+if it's missing, rather than raising a KeyError. In these cases, you can use dict.get:
+
 temps = {'CA': [101, 115, 108], 'NY': [98, 102]}
 temps['California']  # Raises an error (KeyError)!
  
@@ -44,7 +48,8 @@ temps.get('KY')   # => None (not a KeyError!)
  
 ky_temps = temps.get('KY', [])
 num_observations = len(ky_temps)
-The .get method, when passed a nonexistent key as the first argument, returns None (by default) or its second argument if specified. This allows us to write code that is robust to a variety of circumstances.
+The .get method, when passed a nonexistent key as the first argument, returns None (by default) or its second argument if specified. 
+This allows us to write code that is robust to a variety of circumstances.
 
 Removing Elements
 There are a few techniques for removing elements from a dictionary:
@@ -63,12 +68,16 @@ d.keys()
 d.values()
 d.items()
  
-Each of the returned objects is a subtype of MappingView, an abstract type that supports, among other operations, len(view), iter(view), and x in view. This enables the following code:
+Each of the returned objects is a subtype of MappingView, an abstract type that supports, 
+among other operations, len(view), iter(view), and x in view. This enables the following code:
+
 len(d.keys())  # => 3
 ('one', 1) in d.items()  # => True
 for value in d.values():
     print(value)  # Prints 1, 2, and 3
 keys_list = list(d.keys())  # Create a new list, decoupled from the changes to the original dict.
-Note that iterating over a dictionary produces elements from its collection of keys – if you want to loop over key:value pairs, you'll likely use the following pattern:
+Note that iterating over a dictionary produces elements from its collection of keys – 
+if you want to loop over key:value pairs, you'll likely use the following pattern:
+
 for key, value in mydict.items():
     do_something_with(key, value)
