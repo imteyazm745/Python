@@ -15,3 +15,14 @@ The print function in Python takes in a variable number of arguments. It's signa
 
 def print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
 
+To get a feel for variadic positional parameters, consider the following function and its various invocations:
+
+def print_my_arguments(a, *b, c=1):
+    print(f"a={a}, b={b}, c={c}")
+
+print_my_arguments(2)                   # a=2, b=(), c=1
+print_my_arguments(2, 7)                # a=2, b=(7,), c=1
+print_my_arguments(2, 7, 1)             # a=2, b=(7, 1), c=1
+print_my_arguments(2, 7, 1, 8)          # a=2, b=(7, 1, 8), c=1
+print_my_arguments(2, 7, 1, 8, 2)       # a=2, b=(7, 1, 8, 2), c=1
+print_my_arguments(2, 7, 1, 8, 2, c=8)  # a=2, b=(7, 1, 8, 2), c=8
