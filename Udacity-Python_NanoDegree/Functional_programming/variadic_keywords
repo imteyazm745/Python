@@ -26,3 +26,6 @@ print_my_arguments(2, 7, 1)             # a=2, b=(7, 1), c=1
 print_my_arguments(2, 7, 1, 8)          # a=2, b=(7, 1, 8), c=1
 print_my_arguments(2, 7, 1, 8, 2)       # a=2, b=(7, 1, 8, 2), c=1
 print_my_arguments(2, 7, 1, 8, 2, c=8)  # a=2, b=(7, 1, 8, 2), c=8
+
+Note that b is our variadic positional parameter, and it contains a tuple of the excess positionally-supplied arguments.
+
