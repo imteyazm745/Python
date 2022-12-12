@@ -2,18 +2,19 @@ Variadic Arguments
 A variadic parameter collection collects excess arguments (that would otherwise go unmatched to a parameter) into a data structure, 
 for the function implementation's use. We'll see two kinds of variadic parameters: variadic positional parameters and variadic keyword parameters.
 
+Variadic Positional Parameters : 
 A parameter of the form *name (such as*args) in a function signature introduces a variadic positional parameter. 
 This parameter will capture excess positionally-supplied arguments into a tuple named the same thing, such as args.
 
 Why would you ever do something like this? Usually, variadic parameters are useful when you're either:
-
-Defining a function with a variable number of positional arguments
-Capturing an unknown collection of arguments, in order to forward them to another handler, like a superclass, a decorator, or other fancy objects.
-Fortunately, variadic parameters aren't as foreign as they might seem. We've already been using them throughout this course!
+   1. Defining a function with a variable number of positional arguments
+   2. Capturing an unknown collection of arguments, in order to forward them to another handler, like a superclass, a decorator, or other fancy objects.
+   3. Fortunately, variadic parameters aren't as foreign as they might seem. We've already been using them throughout this course!
 
 The print function in Python takes in a variable number of arguments. It's signature is (something like)
 
 def print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
+    In the above signature, the *objects is the variadic positional parameter. The other parameters are keyword parameters
 
 To get a feel for variadic positional parameters, consider the following function and its various invocations:
 
