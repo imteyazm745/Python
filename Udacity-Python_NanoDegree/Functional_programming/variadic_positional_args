@@ -29,6 +29,15 @@ print_my_arguments(2, 7, 1, 8, 2, c=8)  # a=2, b=(7, 1, 8, 2), c=8
 
 Note that b is our variadic positional parameter, and it contains a tuple of the excess positionally-supplied arguments.
 
+We'll use this new concept to write a function called product, which multiplies together any number of positionally-supplied arguments.
+
+def product(*nums, start=1):
+    running_product = start
+    for number in nums:
+        running_product *= number
+    return running_product
+
+
 Keyword-Only Parameters :	A subcategory of optional parameter defined by a function signature that can only be overridden by an argument supplied by keyword.
 Variadic Positional Argument Unpacking :	A mechanism to unpack an iterable with the syntax *iterable into positional arguments supplied when a function is invoked.
 Variadic Positional Parameter Collection :	A category of parameter like *args that captures a variable number of excess positional arguments in a tuple.
