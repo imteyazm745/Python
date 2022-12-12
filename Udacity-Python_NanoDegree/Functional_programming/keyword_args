@@ -84,3 +84,11 @@ ask_yn("Do you like raindrops on roses?")
 ask_yn("How about whiskers on kittens?", retries=10)
 ask_yn("Any love for bright copper kettles?", complaint="Yes or no :)")
 ask_yn("Would you like warm woolen mittens?", retries=10, complaint="A yes or no shall suffice.")
+
+Argument :	An object (or a name referring to an object) that is supplied to a function when the function is invoked.
+Keyword Argument :	An argument that is supplied to a function call by keyword, not by position.
+Optional Parameter :	A category of parameter defined by a function signature that provides a default value for a parameter name.
+Parameter :	A name defined in a function signature that will be bound to a value when the function is invoked.
+Positionally-Supplied Argument :	An argument that is supplied to a function call by position, not by keyword.
+Required Parameter :	A category of parameter defined by a function signature that does not provide any default value, 
+and must receive a value from a corresponding supplied argument.
