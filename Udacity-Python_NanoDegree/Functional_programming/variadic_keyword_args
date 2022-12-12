@@ -1,0 +1,10 @@
+Variadic Keyword Parameters
+A parameter of the form **name (such as**kwargs) in a function signature introduces a variadic keyword parameter.
+This parameter will capture excess keyword-supplied arguments into a dictionary named the same thing, such as kwargs.
+
+Why would you ever do something like this? Usually, variadic keyword parameters are useful when you're either:
+    1.Allowing arbitrary named parameters for special configuration
+    2. As with variadic positional parameters, capturing an unknown collection of arguments, 
+          in order to forward them to another handler, like a superclass, a decorator, or other fancy objects.
+
+
