@@ -53,4 +53,24 @@ authorize(
 # canzone: Bella Ciao
 # lingua: Italiano
 
+How will we write this function?
+
+def authorize(quote, **speaker_info):
+    print(">", quote)
+    print("-" * (len(quote) + 2))
+    for key, value in speaker_info.items():
+        print(key, value, sep=': ')
+
+info = {
+    'sonnet': 18,
+    'line': 1,
+    'author': "Shakespeare"
+}
+authorize("Shall I compare thee to a summer's day", **info)  # Does the same thing as authorize("Shall I compare thee to a summer's day", sonnet=18, line=1, author='Shakespeare')
+# > Shall I compare thee to a summer's day
+# ----------------------------------------
+# sonnet: 18
+# line: 1
+# author: Shakespeare
+The syntax **mapping at a call site consumes the mapping's key-value pairs into a variable number of keyword-supplied arguments.
 
