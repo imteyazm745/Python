@@ -47,6 +47,9 @@ product()  # => 1
 product(7, start=15)  # => 105
 product(5, 6, start=10)  # => 300
 
+def fn(name, *surnames, suffix=''):
+The function takes one required name, any number of surnames, and an optional suffix defaulting to the empty string.
+
 Keyword-Only Parameters :	A subcategory of optional parameter defined by a function signature that can only be overridden by an argument supplied by keyword.
 Variadic Positional Argument Unpacking :	A mechanism to unpack an iterable with the syntax *iterable into positional arguments supplied when a function is invoked.
 Variadic Positional Parameter Collection :	A category of parameter like *args that captures a variable number of excess positional arguments in a tuple.
