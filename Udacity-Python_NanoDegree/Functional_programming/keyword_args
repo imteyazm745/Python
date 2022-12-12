@@ -65,4 +65,22 @@ def ask_yn(prompt, retries=4, complaint='Enter Y/N!'):
         print(complaint)
     return False
 
+This function can be called in a number of ways:
 
+# Call with only the mandatory argument
+ask_yn('Really quit?')
+
+# Call with one keyword argument
+ask_yn('OK to overwrite the file?', retries=2)
+
+# Call with one keyword argument - in any order!
+ask_yn('Update status?', complaint='Just Y/N')
+
+# Call with all of the keyword arguments
+ask_yn('Send text?', retries=2, complaint='Y/N please!')
+
+# These can provide variants of a simple idea.
+ask_yn("Do you like raindrops on roses?")
+ask_yn("How about whiskers on kittens?", retries=10)
+ask_yn("Any love for bright copper kettles?", complaint="Yes or no :)")
+ask_yn("Would you like warm woolen mittens?", retries=10, complaint="A yes or no shall suffice.")
