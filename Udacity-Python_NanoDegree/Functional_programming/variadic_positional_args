@@ -36,7 +36,16 @@ def product(*nums, start=1):
     for number in nums:
         running_product *= number
     return running_product
+This function has one variadic position parameter, named nums, and one keyword-only argument, named start.
 
+We can call this function with a variable number of arguments.
+
+product(3, 5)  # => 15
+product(3, 4, 2)  # => 24
+product(3, 4, 2, 5)  # => 120
+product()  # => 1
+product(7, start=15)  # => 105
+product(5, 6, start=10)  # => 300
 
 Keyword-Only Parameters :	A subcategory of optional parameter defined by a function signature that can only be overridden by an argument supplied by keyword.
 Variadic Positional Argument Unpacking :	A mechanism to unpack an iterable with the syntax *iterable into positional arguments supplied when a function is invoked.
