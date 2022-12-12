@@ -28,6 +28,29 @@ Note that c is our variadic keyword parameter, and it contains a dictionary of t
 
 We'll use this new concept to write a function called authorize, which attributes a quote to an author, along with some extra information.
 
+We'll want to be able to use the function in the following ways:
 
+authorize(
+    "If music be the food of love, play on.",
+    playwright="Shakespeare",
+    act=1,
+    scene=1,
+    speaker="Duke Orsino"
+)
+# > If music be the food of love, play on.
+# ----------------------------------------
+# playwright: Shakespeare
+# act: 1
+# scene: 1
+# speaker: Duke Orsino
+authorize(
+    "O partigiano, portami via.",
+    canzone="Bella Ciao",
+    lingua="Italiano",
+)
+# > O partigiano, portami via.
+# ----------------------------
+# canzone: Bella Ciao
+# lingua: Italiano
 
 
