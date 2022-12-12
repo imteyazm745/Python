@@ -2,6 +2,9 @@ Keyword Arguments :
 Keyword arguments, also known as default arguments, named arguments, or optional arguments. 
 are a mechanism for providing a default value for one or more parameters.
 
+Arguments can be supplied by position or by keyword
+Each parameter must end up bound to a value
+
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     print("-- This parrot wouldn't", action, end=' ')
     print("if you put", voltage, "volts through it.")
