@@ -51,5 +51,9 @@ parrot(110, voltage=220)
 # Unknown keyword argument.
 parrot(actor='John Cleese')
 
+Let's take a look at another example:
+
+Here's the signature of a Python function ask_yn, which might repeatedly ask the user for an answer to a yes/no question:
+
 
 
