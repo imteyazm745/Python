@@ -74,3 +74,35 @@ authorize("Shall I compare thee to a summer's day", **info)  # Does the same thi
 # author: Shakespeare
 The syntax **mapping at a call site consumes the mapping's key-value pairs into a variable number of keyword-supplied arguments.
 
+a = "First, thou shalt count to {0}".format(3)
+print(a) #First, thou shalt count to 3
+
+b = "{0} shalt thou not count, neither count thou {1}, excepting that thou then procee d to {2}".format (4, 2, 3)
+print(b) # 4 shalt thou not count, neither count thou 2, excepting that thou then procee d to 3
+
+c = "lobbest thou thy {weapon} towards thy foe".format(
+        weapon = "Holy Hand Grenade of Antioch"
+)
+print(c) #lobbest thou thy Holy Hand Grenade of Antioch towards thy foe
+
+d ="{0}{b}{1}{a}{0}{2}".format(
+5, 8, 9, a='z', b='x'
+)
+print(d) #5x8z59
+
+x = 5
+y = 6
+f"{x} {y}" # '5 6'
+
+f"{x} {y}".format(x=x,y=y) #'5 6'
+
+ f"{x} {y} {x+y}"  # '5 6 11'
+
+def f(a, b, c=1, *d, e=1, **f)
+This contain six different argument names.
+a & b is positional arguments
+c is optional keyword argument
+*d represents a variadic positional argument list.
+e=1 is keyword-only argument
+**f is a variadic keyword argument
+
