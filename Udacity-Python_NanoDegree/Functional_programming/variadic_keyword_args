@@ -106,3 +106,6 @@ c is optional keyword argument
 e=1 is keyword-only argument
 **f is a variadic keyword argument
 
+str.format :	A method to format a string by substituting values passed by position or by keyword.
+Variadic Keyword Argument Unpacking :	A mechanism to unpack an mapping with the syntax mapping into keyword arguments supplied when a function is invoked.
+Variadic Keyword Parameter Collection :	A category of parameter like kwargs that captures a variable number of excess keyword arguments in a dictionary.
