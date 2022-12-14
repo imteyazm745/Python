@@ -33,3 +33,15 @@ Function Objects :	A type of object in Python representing a callable function.
 The fn.__code__ attribute :	An attribute of function objects that represents the function's code object.
 The fn.__doc__ attribute : An attribute of function objects that represents the function's documentation string.
 The fn.__name__ attribute :	An attribute of function objects that represents the function's name.
+
+n particular, function documentation is a good place to observe a standard. If you write the function:
+
+def do_a_task(x):
+    """Log the user into the system.
+
+    The user must already have a valid username.
+
+    :param x: The username.
+   """
+   pass
+   
