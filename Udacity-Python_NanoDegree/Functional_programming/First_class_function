@@ -25,6 +25,8 @@ print(echo.__name__)  # => echo
 print(echo.__doc__)  # => Return the first argument.
 print(echo.__code__)  # => <code object echo at 0x..., file "...", line X>
 
-
+Among perhaps other attributes, a function object has: a .__name__ – the function's name, determined when the function object is created;
+a .__doc__ – the function's docstring, which serves as the function's documentation; 
+and a .__code__ object – the actual object that makes up the code that tells Python how to execute this function.
 
 
