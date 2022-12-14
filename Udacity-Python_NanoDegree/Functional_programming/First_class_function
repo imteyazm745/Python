@@ -12,3 +12,5 @@ print(foo)     # <function echo at 0x1003c2bf8>
 'echo' in locals()
 
 isinstance(echo, object)  # => True
+
+Yes! Functions are objects too. 
