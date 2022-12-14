@@ -1,0 +1,19 @@
+lambda functions:	An anonymous function used to define simple callables.
+
+Lambda functions are introduced with the new syntax
+
+lambda params: expr(params)
+
+Named functions vs Lambdas
+
+def double(val):
+    return val * 2
+
+lambda val: val * 2
+
+lambda x, y: x * y
+lambda p: p[0] + p[1]
+lambda a, b=1, *c, d=2, **e:
+
+
+
