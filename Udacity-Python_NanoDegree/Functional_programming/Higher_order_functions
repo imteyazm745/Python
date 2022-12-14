@@ -22,4 +22,10 @@ map(fn, iter)
 The map function transforms a stream of data from an iterable and produces a stream of data by applying the function to each element
 Interestingly, the first argument to map is a function object! This is the first time we've seen a function object be passed as an argument to another function.
 
+Practically, this means that Python lets us rewrite the above example to:
 
+map(len, languages)
+
+The map function doesn't actual produce a list, though. It returns an object which we can consume to get the transformed values – for example, we could see that:
+
+tuple(map(len, languages))  # => (6, 4, 4, 3)
