@@ -38,3 +38,9 @@ True
 >>> x
 [(3, -2), (8, 0), (4, 1)]
 
+It's consider bad style to write a line of code like:
+triple = lambda x: x * 3
+
+In this case, it would be better just to have
+def triple(x):
+    return x * 3
