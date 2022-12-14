@@ -14,3 +14,17 @@ print(foo)     # <function echo at 0x1003c2bf8>
 isinstance(echo, object)  # => True
 
 Yes! Functions are objects too. 
+
+Let's look back at our example from before:
+
+def echo(arg):
+    """Return the first argument."""
+    return arg
+
+print(echo.__name__)  # => echo
+print(echo.__doc__)  # => Return the first argument.
+print(echo.__code__)  # => <code object echo at 0x..., file "...", line X>
+
+
+
+
