@@ -29,4 +29,7 @@ Among perhaps other attributes, a function object has: a .__name__ – the funct
 a .__doc__ – the function's docstring, which serves as the function's documentation; 
 and a .__code__ object – the actual object that makes up the code that tells Python how to execute this function.
 
-
+Function Objects :	A type of object in Python representing a callable function.
+The fn.__code__ attribute :	An attribute of function objects that represents the function's code object.
+The fn.__doc__ attribute : An attribute of function objects that represents the function's documentation string.
+The fn.__name__ attribute :	An attribute of function objects that represents the function's name.
