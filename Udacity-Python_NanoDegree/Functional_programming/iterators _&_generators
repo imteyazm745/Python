@@ -25,4 +25,33 @@ for element in data:
 for element in iter(data):
     process(element)
 
+>>> it = iter([1, 2, 4])
+>>> next(it)
+1
+>>> next(it)
+2
+>>> next(it)
+4
+>>> next(it)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+
+>>> max(4, 7, 18, 35, 6)
+35
+
+>>> min(4, 7, 18, 35, 6)
+4
+
+>>> min(iter([2, 5, 4]))
+2
+
+>>> max(iter([2, 5, 4]))
+5
+
+>>> 2 in [2, 5, 4]
+True
+
+>>> 2 in iter([2, 5, 4])
+True
 
