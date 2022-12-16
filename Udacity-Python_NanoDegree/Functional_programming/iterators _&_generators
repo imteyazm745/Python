@@ -1,0 +1,28 @@
+Iterators
+An iterator represents a (finite or infinite) stream of data.
+
+The next(iter) call asks an iterator to yield a successive value. 
+If there are no more values, it raises StopIteration. 
+The iter(data) function produces an iterator from an iterable data source.
+
+Using Iterators
+You can build an iterator from data:
+
+# Build an iterator over [1,2,3]
+it = iter([1,2,3])
+next(it)  # => 1
+next(it)  # => 2
+next(it)  # => 3
+next(it)  # raises StopIteration error
+
+Iterators are fundamental to the language. The humble for loop is really using an iterator!
+
+for element in data:
+    process(element)
+
+# actually behaves like
+
+for element in iter(data):
+    process(element)
+
+
