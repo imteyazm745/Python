@@ -25,6 +25,29 @@ for element in data:
 for element in iter(data):
     process(element)
 
+Built-in functions can consume iterables:
+
+max(iterable)
+min(iterable)
+any(iterable)
+all(iterable)
+element in iterable
+
+Some built-in functions even produce iterables:
+
+range(stop)
+enumerate(iterable)
+zip(*iterables)
+map(fn, iterable)
+filter(pred, iterable)
+
+Iterators maintain some semblance of state:
+
+it = iter(range(100))
+66 in it
+next(it)  # => 67
+
+
 >>> it = iter([1, 2, 4])
 >>> next(it)
 1
