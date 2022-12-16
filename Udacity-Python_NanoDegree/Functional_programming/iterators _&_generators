@@ -130,3 +130,17 @@ next(g)  # => 2
 next(g)  # => 3
 next(g)  # => 5
 max(g)   # Don't run this line of code. What happens?
+
+Representations of infinite streams of data, like the generate_fibs generator function, can be nicely paired with other consumers:
+
+def fibs_under(n):
+    for fib in generate_fibs():  # Loops over 1, 1, 2, ...
+        if fib > n:
+            break
+        print(fib)
+
+Generator Expression :	A syntactical shortcut to create on-the-fly iterators with simple implementations.
+Generator Function  :	A special type of function containing the keyword yield that can produce a stream of values when called.
+Iterable :	An object that can be iterated over.
+Iterator :	An object representing a stream of data that can yield successive values.
+
