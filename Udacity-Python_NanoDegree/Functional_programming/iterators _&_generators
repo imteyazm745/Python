@@ -78,3 +78,55 @@ True
 >>> 2 in iter([2, 5, 4])
 True
 
+Generator expressions are a useful feature for describing a stream of data inline. 
+They behave a bit like a "lazy list comprehension."
+
+gen = (costly_fn(data) for data in iterable)
+print(gen)  # <generator object <genexpr> at 0x109055cf0>
+next(gen)  # => The first transformed element.
+next(gen)  # => The second transformed element.
+...
+Generator expressions are appropriate when you want data-on-demand, 
+but you might not want to compute all of it at once in memory. Consider:
+
+needle in
+(expensive_fn(item) for item in haystack)
+
+needle in
+[expensive_fn(item) for item in haystack]
+
+A generator function looks like a normal function, except it contains the keyword yield.
+
+When called, a generator function returns a generator iterator that can produce 
+subsequent values on demand by running the function until it encounters a yield statement, 
+and then pausing. In this way, generators are an advanced way to describe a stream of data.
+
+To build a generator function, define a function containing the yield keyword. 
+To use it, call the generator function to get a generator iterator, and iterator over it to your heart's content.
+
+def generate_ints(n):
+    for i in range(n):
+        yield i
+
+g = generate_ints(3)  # Doesn't start the function! Just sets up the iterator
+type(g)  # => <class 'generator'>
+
+next(g)  # => 0. Run until the next yield statement.
+next(g)  # => 1. Run until the next yield statement.
+next(g)  # => 2. Run until the next yield statement.
+next(g)  # raises StopIteration. Finished the function before finding another yield statement.
+This can be used to describe fancier streams of data, that aren't easily accomplished with built-ins or generator expressions:
+
+def generate_fibs():
+    a, b = 0, 1
+    while True:
+        a, b = b, a + b
+        yield a
+
+g = generate_fibs()
+next(g)  # => 1
+next(g)  # => 1
+next(g)  # => 2
+next(g)  # => 3
+next(g)  # => 5
+max(g)   # Don't run this line of code. What happens?
