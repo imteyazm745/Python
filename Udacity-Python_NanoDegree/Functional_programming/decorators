@@ -15,6 +15,21 @@ def perform_twice(fn, *args, **kwargs):
 perform_twice(print, 5, 10, sep='&', end='...')
 # 5&10...5&10...
 
+The perform_twice function takes a function and its arguments, and calls it twice. 
+Notice that the parameter list includes a variadic positional parameter and a variadic keyword parameter. 
+In the implementation, it unpacks these captured arguments into the fn. This is a common pattern in which a function, 
+such as perform_twice can capture any collection of arguments and forward them along to some captured function object, such as fn.
 
+Functions as Return Values
+Can we also create functions and return them from other functions. Why, of course! 
+We can write a function make_divisibility_test(n) that produces a function to check whether a number m is divisible by n:
 
+def make_divisibility_test(n):
+    def divisible_by_n(m):
+        return m % n == 0
+    return divisible_by_n
 
+div_by_3 = make_divisibility_test(3)
+tuple(filter(div_by_3, range(10)))  # => (0, 3, 6, 9)
+
+make_divisibility_test(5)(10)  # => True
