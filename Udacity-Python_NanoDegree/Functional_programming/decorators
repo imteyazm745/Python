@@ -60,6 +60,23 @@ compute(3, 5, z=2)
 # (3, 5) {'z': 2}
 # => 16
 
+Decorator Syntax
+It's a bit awkward to have to write def compute and then compute = print_args(compute). If only there was a better way! In Python, there is.
+
+@print_args
+def compute(x, y, z=1):
+    return (x + y) * z
+
+import functools
+
+def print_args(function):
+    @functools.wraps(function)
+    def wrapper(*args, **kwargs):
+        print(args, kwargs)
+        return function(*args, **kwargs)
+    return wrapper
+The functools.wraps(function) decorator updates the wrapper function so that it clones important properties from function.
+
 
 
 
