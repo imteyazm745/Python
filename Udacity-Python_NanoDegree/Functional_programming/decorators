@@ -1,0 +1,20 @@
+Decorators are, by far, among the most satisfying features of Python. 
+To understand them, we'll need to reframe some building blocks, because 
+decorators are wild.
+
+Functions as Arguments
+We've already seen that functions can be arguments – the map and filter function expected 
+the first argument to be a function object. We can go one step further,
+and write a function that takes in everything we need to run another 
+function – the function object,as well as variadic collections of arguments:
+
+def perform_twice(fn, *args, **kwargs):
+    fn(*args, **kwargs)
+    fn(*args, **kwargs)
+
+perform_twice(print, 5, 10, sep='&', end='...')
+# 5&10...5&10...
+
+
+
+
