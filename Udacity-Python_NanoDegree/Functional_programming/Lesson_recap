@@ -1,10 +1,13 @@
 Function Behavior
 Return values: Functions always return some value, even if that value is None or a tuple.
-Scope: Functions introduce new scopes; assignment is to the local scope; name resolution happens from the local scope outwards (local (-> enclosing) -> global -> built-in)
-Pass-by-object-reference: The literal names of the arguments are copied by value into the function's local namespace, but each name is just a reference to an object. In this way, Python passes object-references into functions.
+Scope: Functions introduce new scopes; assignment is to the local scope; 
+name resolution happens from the local scope outwards (local (-> enclosing) -> global -> built-in)
+Pass-by-object-reference: The literal names of the arguments are copied by value into the function's local namespace, 
+but each name is just a reference to an object. In this way, Python passes object-references into functions.
 
 Arguments
-Keyword arguments are used to provide default, optional parameters, and are super useful to present a simple interface while maintaining the power of configurability and more complex implementation.
+Keyword arguments are used to provide default, optional parameters,
+and are super useful to present a simple interface while maintaining the power of configurability and more complex implementation.
 Variadic arguments (positional and keyword) capture excess arguments into a collection for processing or forwarding to another handler.
 
 Functional programming
@@ -45,7 +48,8 @@ Name Resolution :	The process by which Python determines the value associated wi
 The operator module :	A built-in module that provides standard operators as functions.
 Optional Parameter :	A category of parameters defined by a function signature that provides a default value for a parameter name.
 Parameter :	A name defined in a function signature that will be bound to a value when the function is invoked.
-Pass-By-Object-Reference :	The mechanism by which Python supplies arguments a function's local symbol table - variables (i.e. references to objects) are copied, but the referred objects are themselves accessible through the reference.
+Pass-By-Object-Reference :	The mechanism by which Python supplies arguments a function's local symbol table - variables (i.e. references to objects) are copied, 
+but the referred objects are themselves accessible through the reference.
 PEP 257	Docstring Conventions
 PEP 8	Style Guide for Python Code
 Positional-Only Arguments :	A subcategory of required parameters defined by a function signature that can only be supplied by a positional argument.
