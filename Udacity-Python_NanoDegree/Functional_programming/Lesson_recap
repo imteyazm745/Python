@@ -18,3 +18,20 @@ Decorators
 Decorators are high-level functional transformations.
 The @decorator syntax above a function definition immediately applies the decorator to the function object after definition.
 Decorators are useful for a plethora of behavior modifications, from memoization to timeouts to network abstractions.
+
+
+Argument :	An object (or a name referring to an object) that is supplied to a function when the function is invoked.
+Decorator :	A high-level function that traditionally transforms an input function into a slightly-modified output function with desired decorated behavior.
+@decorator :	Special syntax to apply a decorator to an immediately-subsequent function definition.
+filter :	A built-in function that filters an iterable by keeping only elements that successfully pass a predicate function.
+The fn.__code__ attribute :	An attribute of function objects that represents the function's code object.
+The fn.__doc__ attribute :	An attribute of function objects that represents the function's documentation string.
+The fn.__name__ attribute	: An attribute of function objects that represents the function's name.
+Function Objects :	A type of object in Python representing a callable function.
+Functional Implementation :	The details of how a function transforms its inputs to outputs
+Functional Interface :	A function's inputs and outputs, viewed collectively as a contract between the function and the outside world
+Functional Programming :	A programming paradigm focusing on higher-order functions and composition as fundamental tools for solving problems.
+Generator Expression :	A syntactical shortcut to create on-the-fly iterators with simple implementations.
+Generator Function :	A special type of function containing the keyword yield that can produce a stream of values when called.
+globals() :	A Python builtin function call that returns a dictionary representation of the global namespace.
+Iterable :	An object that can be iterated over.
