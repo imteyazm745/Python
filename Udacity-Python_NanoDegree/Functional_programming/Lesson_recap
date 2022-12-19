@@ -1,0 +1,20 @@
+Function Behavior
+Return values: Functions always return some value, even if that value is None or a tuple.
+Scope: Functions introduce new scopes; assignment is to the local scope; name resolution happens from the local scope outwards (local (-> enclosing) -> global -> built-in)
+Pass-by-object-reference: The literal names of the arguments are copied by value into the function's local namespace, but each name is just a reference to an object. In this way, Python passes object-references into functions.
+
+Arguments
+Keyword arguments are used to provide default, optional parameters, and are super useful to present a simple interface while maintaining the power of configurability and more complex implementation.
+Variadic arguments (positional and keyword) capture excess arguments into a collection for processing or forwarding to another handler.
+
+Functional programming
+map and filter are functional tools to transform or filter collections.
+lambda functions are on-the-fly anonymous functions for simple applications.
+Iterators provide the abstraction of a stream of data.
+Generator functions (or even generator expressions) provide more control over defining a stream of data.
+Refactoring Python code to use generators is a nice way to simplify programs where there is a lot of data flowing around.
+
+Decorators
+Decorators are high-level functional transformations.
+The @decorator syntax above a function definition immediately applies the decorator to the function object after definition.
+Decorators are useful for a plethora of behavior modifications, from memoization to timeouts to network abstractions.
