@@ -5,6 +5,12 @@ For example, operator.add(a, b) performs the same operation as a + b, and operat
 the same operation as a < b. The module even has some high-level advanced tools – the expression a[1] can also be operator.itemgetter(1)(a), 
 which means that you could use the function operator.itemgetter(1) in a map expression or as a key to the sort function.
 
+Positional-only parameters
+We saw that keyword parameters listed after variadic positional parameters were keyword-only, 
+in that values could only be provided to that parameter when keyword-supplied. 
+Python 3.8 introduced a new, funky syntax to identify that some parameters can only be positionally-supplied: def f(a, b, /, c): pass. 
+This function can be called as f(1, 2, 3) or f(1, 2, c=3), but not f(1, b=2, c=3).
+
 
 
 
