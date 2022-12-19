@@ -1,0 +1,10 @@
+The operator module
+Python has an operator module built-in to the standard library. 
+It provides standard operators as functions, so you can use them in functional contexts.
+For example, operator.add(a, b) performs the same operation as a + b, and operator.lt(a, b) performs
+the same operation as a < b. The module even has some high-level advanced tools – the expression a[1] can also be operator.itemgetter(1)(a), 
+which means that you could use the function operator.itemgetter(1) in a map expression or as a key to the sort function.
+
+
+
+
