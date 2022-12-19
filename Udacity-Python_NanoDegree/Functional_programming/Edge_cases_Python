@@ -11,6 +11,12 @@ in that values could only be provided to that parameter when keyword-supplied.
 Python 3.8 introduced a new, funky syntax to identify that some parameters can only be positionally-supplied: def f(a, b, /, c): pass. 
 This function can be called as f(1, 2, 3) or f(1, 2, c=3), but not f(1, b=2, c=3).
 
+Here are a few more topics that are either too complex or too obscure to cover – but if you're interested, there are great resources on the web.
 
+Python lets you write functions that connect to other programming languages.
+What's up with that? How do the function attributes or signatures map between languages?
+Nested functions can "remember" their local environment, and they do so with a closure. How does that work?
+Collections can be variadically unpacked at a call site. Can you unpack multiple collections positionally or multiple collections by keyword?
 
-
+Positional-Only Arguments :	A subcategory of required parameter defined by a function signature that can only be supplied by a positional argument.
+The operator module :	A built-in module that provides standard operators as functions.
