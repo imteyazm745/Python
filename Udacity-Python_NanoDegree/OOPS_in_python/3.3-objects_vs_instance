@@ -34,7 +34,8 @@ print('num' in MyFirstClass.__dict__)  # True
 print('greet' in MyFirstClass.__dict__)  # True
 
 INSTANCE : Instance is an object that belongs to a class. OR an instance of a class is also called an object
-We can define class objects and resolve attributes on them. How do we make instances of a class? Through instantiation! The syntax ClassName(...) constructs a new instance object whose type is the class object ClassName.
+We can define class objects and resolve attributes on them. How do we make instances of a class? Through instantiation! 
+The syntax ClassName(...) constructs a new instance object whose type is the class object ClassName.
 
 class House:
     layout = 'square'
@@ -50,7 +51,11 @@ home = House()  # `home` is now a _specific_ instance object of type `House`
 print(home)  # <House at 0x....>
 print(type(home) is House)  # True
 
+To summarize -
 
+Class objects are defined with the class keyword and maintain attributes that can be set (in the class definition or elsewhere) and accessed.
+Class objects can be instantiated to produce instance objects.
+Class objects represents a type or category of object, and instance objects represent a concrete instantiation of that category.
 
 
 
