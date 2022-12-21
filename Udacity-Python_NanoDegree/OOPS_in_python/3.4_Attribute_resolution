@@ -21,7 +21,20 @@ If you ever need to delete an attribute (rarely), you can use something like del
 
 Notice that num and greet aren't in home.__dict__, but rather are attributes of the class object (i.e they are in House.__dict__). What do you think will happen if we ask for home.num? What about home.greet? Feel free to use the interactive interpreter to explore your curiosities - we'll review together soon.
 
+Special Functions
+Python offers the special functions getattr, setattr, and delattr to perform these operations, if you would like to think of them functionally.
 
+Specifically:
 
+getattr(x, 'y') is equivalent to x.y. It also accepts a default fallback value if the attribute isn't found.
+setattr(x, 'y', z) is equivalent to x.y = z
+delattr(x, 'y') is equivalent to del x.y
+To summarize:
+
+Attributes are names that come after a dot, like obj.name and represent some information that is attached to an object.
+Attributes can be retrieved or arbitrarily assigned on class objects or instance objects.
+Class objects and instance objects each store their attributes in a special __dict__ attribute.
+
+The __dict__ Attribute	A special attribute in which objects store arbitrary attributes.
 
 
