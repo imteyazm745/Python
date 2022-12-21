@@ -32,3 +32,25 @@ print(MyFirstClass.greet)  # <function MyFirstClass.greet(self)>
 print(type(MyFirstClass.__dict__))  # something that acts a lot like a normal dictionary
 print('num' in MyFirstClass.__dict__)  # True
 print('greet' in MyFirstClass.__dict__)  # True
+
+INSTANCE : Instance is an object that belongs to a class. OR an instance of a class is also called an object
+We can define class objects and resolve attributes on them. How do we make instances of a class? Through instantiation! The syntax ClassName(...) constructs a new instance object whose type is the class object ClassName.
+
+class House:
+    layout = 'square'
+    def paint(self, color):
+        self.color = color
+
+# As before, we can access attributes.
+print(House.layout)  # 'square'
+print(House.paint)  # <function House.paint(self, color)>
+
+# This is the new syntax! Instantiate a class object to get back an instance object.
+home = House()  # `home` is now a _specific_ instance object of type `House`
+print(home)  # <House at 0x....>
+print(type(home) is House)  # True
+
+
+
+
+
