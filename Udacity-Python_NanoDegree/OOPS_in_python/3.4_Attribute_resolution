@@ -1,6 +1,10 @@
 Now that we have a home instance object of the House class object, what can we do with it?
 
-We can assign arbitrary attributes with values to the instance object with home.attribute_name = value, which stores these attributes and their values in a special __dict__ attribute (in the exact same way that the class object did!). We can update these attributes too. When we try to access an attribute, if the attribute is found in the instance object's __dict__, we get back the associated value.
+We can assign arbitrary attributes with values to the instance object with home.
+attribute_name = value, which stores these attributes and their values in a special __dict__ attribute 
+(in the exact same way that the class object did!). 
+We can update these attributes too. When we try to access an attribute, 
+if the attribute is found in the instance object's __dict__, we get back the associated value.
 
 home.size = '1000'
 print(home.size)  # 1000
@@ -17,9 +21,12 @@ home.color = 'blue'
 print(home.color)  # blue
 print(home.num_bathrooms)  # 2
 
-If you ever need to delete an attribute (rarely), you can use something like del home.color, which attempts to remove color from home's attributes (i.e. from home.__dict__).
+If you ever need to delete an attribute (rarely), you can use something like del home.color, 
+which attempts to remove color from home's attributes (i.e. from home.__dict__).
 
-Notice that num and greet aren't in home.__dict__, but rather are attributes of the class object (i.e they are in House.__dict__). What do you think will happen if we ask for home.num? What about home.greet? Feel free to use the interactive interpreter to explore your curiosities - we'll review together soon.
+Notice that num and greet aren't in home.__dict__, but rather are attributes of the class object 
+(i.e they are in House.__dict__). What do you think will happen if we ask for home.num? 
+What about home.greet? Feel free to use the interactive interpreter to explore your curiosities - we'll review together soon.
 
 Special Functions
 Python offers the special functions getattr, setattr, and delattr to perform these operations, if you would like to think of them functionally.
