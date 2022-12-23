@@ -83,7 +83,8 @@ my_list.sort(key=None, reverse=False)
 
 # Reverse *in place*.
 my_list.reverse()
-As sequences, lists also support operations that apply to all collections, such as checking its size or checking if an element is contained:
+As sequences, lists also support operations that apply to all collections, 
+such as checking its size or checking if an element is contained:
 
 # Length (len)
 len([])  # => 0
