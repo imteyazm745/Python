@@ -26,7 +26,8 @@ after all, type(1) != type(1.0), because int != float.
 
 To save the day, we have the is operator – which checks for identity instead of equality.
 While equality is a matter of interpretation, identity is undebatable – two objects are 
-identical if and only if they are literally the same Python object, whereas two objects are equal if their contents compare equal.
+identical if and only if they are literally the same Python object, 
+whereas two objects are equal if their contents compare equal.
 
 Consider the following code:
 x = "hello world"
