@@ -53,26 +53,26 @@ You can get the data type of a variable with the type() function.
 Example
 x = 5
 y = "John"
-print(type(x))
-print(type(y))
+print(type(x)) # => <class 'int'>
+print(type(y)) # => <class 'str'>
 
 Many Values to Multiple Variables
 Python allows you to assign values to multiple variables in one line:
 
 Example
 x, y, z = "Orange", "Banana", "Cherry"
-print(x)
-print(y)
-print(z)
+print(x) # => Orange
+print(y) # => Banana
+print(z) # => Cherry
 
 One Value to Multiple Variables
 And you can assign the same value to multiple variables in one line:
 
 Example
 x = y = z = "Orange"
-print(x)
-print(y)
-print(z)
+print(x) # => Orange
+print(y) # => Orange
+print(z) # => Orange
 
 Unpack a Collection
 If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.
@@ -82,9 +82,46 @@ Unpack a list:
 
 fruits = ["apple", "banana", "cherry"]
 x, y, z = fruits
+print(x) # => apple
+print(y) # => banana
+print(z) # => cherry
+
+Output Variables : The Python print() function is often used to output variables.
+Example
+x = "Python is awesome"
 print(x)
-print(y)
-print(z)
+
+In the print() function, you output multiple variables, separated by a comma, OR You can also use the + operator to output multiple variables.
+Example
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z) #OR print(x + y + z) # => Python is awesome
+
+For numbers, the + character works as a mathematical operator:
+Example
+x = 5
+y = 10
+print(x + y) # => 15
+
+Global Variables
+Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+Global variables can be used by everyone, both inside of functions and outside.
+Example
+Create a variable outside of a function, and use it inside the function
+x = "awesome"
+def myfunc():
+  print("Python is " + x)
+myfunc() # => Python is awesome
+
+Example
+Create a variable inside a function, with the same name as the global variable
+x = "awesome"
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+myfunc() # => Python is fantastic
+print("Python is " + x) # => Python is awesome
 
 Comments : Python has commenting capability for the purpose of in-code documentation.
 
