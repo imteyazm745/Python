@@ -119,18 +119,98 @@ To, but not included: "d" in "World!" (position -2):
 b = "Hello, World!"
 print(b[-5:-2]) # orl
 
+Python - Modify Strings : Python has a set of built-in methods that you can use on strings.
+Upper Case
+Example : The upper() method returns the string in upper case:
+a = "Hello, World!"
+print(a.upper()) #HELLO, WORLD!
 
+Lower Case
+Example : The lower() method returns the string in lower case:
+a = "Hello, World!"
+print(a.lower()) #hello, world!
 
+Remove Whitespace : Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+Example : The strip() method removes any whitespace from the beginning or the end:
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
 
+Replace String
+Example : The replace() method replaces a string with another string:
+a = "Hello, World!"
+print(a.replace("H", "J")) #Jello, World!
 
+Split String : The split() method returns a list where the text between the specified separator becomes the list items.
+Example : The split() method splits the string into substrings if it finds instances of the separator:
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
 
+String Concatenation : To concatenate, or combine, two strings you can use the + operator.
+Example : Merge variable a with variable b into variable c:
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
 
+Example : To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
 
+Python - Format - Strings
+String Format : As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:
+Example
+age = 36
+txt = "My name is John, I am " + age
+print(txt) # ERROR
 
+But we can combine strings and numbers by using the format() method!
+The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:
+Example : Use the format() method to insert numbers into strings:
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age)) #My name is John, and I am 36
 
+The format() method takes unlimited number of arguments, and are placed into the respective placeholders:
 
+Example
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
 
+You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:
+Example : 
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
 
+Python - Escape Characters
+Escape Character
+To insert characters that are illegal in a string, use an escape character.
 
+An escape character is a backslash \ followed by the character you want to insert.
 
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+txt = "We are the so-called "Vikings" from the north." #ERROR
+
+To fix this problem, use the escape character \":
+Example : The escape character allows you to use double quotes when you normally would not be allowed:
+txt = "We are the so-called \"Vikings\" from the north."
+
+Escape Characters
+Other escape characters used in Python:
+\'	Single Quote	
+\\	Backslash	
+\n	New Line	
+\r	Carriage Return	
+\t	Tab	
+\b	Backspace	
+\f	Form Feed	
+\ooo	Octal value	
+\xhh	Hex value
 
