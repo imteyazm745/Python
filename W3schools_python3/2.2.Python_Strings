@@ -202,7 +202,7 @@ To fix this problem, use the escape character \":
 Example : The escape character allows you to use double quotes when you normally would not be allowed:
 txt = "We are the so-called \"Vikings\" from the north."
 
-Escape Characters
+Escape Characters: 
 Other escape characters used in Python:
 \'	Single Quote	
 \\	Backslash	
@@ -213,4 +213,3 @@ Other escape characters used in Python:
 \f	Form Feed	
 \ooo	Octal value	
 \xhh	Hex value
-
