@@ -107,3 +107,11 @@ Note: The search will start at index 2 (included) and end at index 5 (not includ
 By leaving out the start value, the range will start at the first item:
 By leaving out the end value, the range will go on to the end of the list:
 
+Check if Item Exists
+To determine if a specified item is present in a list use the in keyword:
+
+Example : Check if "apple" is present in the list:
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list") # => Yes, 'apple' is in the fruits list
+
