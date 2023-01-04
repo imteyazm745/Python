@@ -1,5 +1,4 @@
-Python Lists
-mylist = ["apple", "banana", "cherry"]
+
 
 List
 Lists are used to store multiple items in a single variable.
