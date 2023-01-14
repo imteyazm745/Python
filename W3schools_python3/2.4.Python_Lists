@@ -367,9 +367,6 @@ Example
 With no if statement:
 newlist = [x for x in fruits]
 
-Iterable
-The iterable can be any iterable object, like a list, tuple, set etc.
-
-Example
-You can use the range() function to create an iterable:
+Iterable : The iterable can be any iterable object, like a list, tuple, set etc.
+Example : You can use the range() function to create an iterable:
 newlist = [x for x in range(10)]
