@@ -354,8 +354,7 @@ The return value is a new list, leaving the old list unchanged.
 Condition
 The condition is like a filter that only accepts the items that valuate to True.
 
-Example
-Only accept items that are not "apple":
+Example : Only accept items that are not "apple":
 
 newlist = [x for x in fruits if x != "apple"]
 
@@ -363,8 +362,7 @@ The condition if x != "apple"  will return True for all elements other than "app
 
 The condition is optional and can be omitted:
 
-Example
-With no if statement:
+Example : With no if statement:
 newlist = [x for x in fruits]
 
 Iterable : The iterable can be any iterable object, like a list, tuple, set etc.
