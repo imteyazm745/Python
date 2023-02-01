@@ -120,3 +120,16 @@ thisset = {"apple", "banana", "cherry"}
 mylist = ["kiwi", "orange"]
 thisset.update(mylist)
 print(thisset)
+
+Python - Remove Set Items
+Remove Item
+To remove an item in a set, use the remove(), or the discard() method.
+
+Example
+Remove "banana" by using the remove() method:
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.remove("banana")
+
+print(thisset)
