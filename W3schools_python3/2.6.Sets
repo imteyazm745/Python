@@ -223,3 +223,10 @@ Example : True and 1 is considered the same value:
 x = {"apple", "banana", "cherry", True}
 y = {"google", 1, "apple", 2}
 z = x.symmetric_difference(y) #{2, 'google', 'cherry', 'banana'}
+
+add()     :	            Adds an element to the set
+clear()	                Removes all the elements from the set
+copy()	                Returns a copy of the set
+difference()	          Returns a set containing the difference between two or more sets
+difference_update()	    Removes the items in this set that are also included in another, specified set
+discard()	              Remove the specified item
