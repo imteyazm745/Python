@@ -241,3 +241,9 @@ symmetric_difference()	Returns a set with the symmetric differences of two sets
 symmetric_difference_update()	inserts the symmetric differences from this set and another
 union()	                Return a set containing the union of sets
 update()	              Update the set with the union of this set and others
+
+fruits = {"apple", "banana", "cherry"}
+if "apple" 
+in
+ fruits:
+  print("Yes, apple is a fruit!")
