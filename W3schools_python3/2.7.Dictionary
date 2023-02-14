@@ -37,3 +37,12 @@ Dictionaries are changeable, meaning that we can change, add or remove items aft
 Duplicates Not Allowed
 Dictionaries cannot have two items with the same key:
 
+Example : Duplicate values will overwrite existing values:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict) #{'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+
