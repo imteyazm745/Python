@@ -96,3 +96,13 @@ List is a collection which is ordered and changeable. Allows duplicate members.
 Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
 Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+Python - Access Dictionary Items
+Accessing Items : You can access the items of a dictionary by referring to its key name, inside square brackets:
+Example : Get the value of the "model" key:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"] #Mustang
