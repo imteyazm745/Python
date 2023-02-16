@@ -106,3 +106,12 @@ thisdict = {
   "year": 1964
 }
 x = thisdict["model"] #Mustang
+
+There is also a method called get() that will give you the same result:
+
+Example : Get the value of the "model" key:
+x = thisdict.get("model") #Mustang
+
+Get Keys : The keys() method will return a list of all the keys in the dictionary.
+Example : Get a list of the keys:
+x = thisdict.keys() #dict_keys(['brand', 'model', 'year'])
