@@ -134,13 +134,13 @@ print(x) #after the change
 Get Values
 The values() method will return a list of all the values in the dictionary.
 
-ExampleGet your own Python Server
+Example
 Get a list of the values:
 
 x = thisdict.values()
 The list of the values is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the values list.
 
-ExampleGet your own Python Server
+Example
 Make a change in the original dictionary, and see that the values list gets updated as well:
 
 car = {
@@ -157,7 +157,7 @@ car["year"] = 2020
 
 print(x) #after the change
 
-ExampleGet your own Python Server
+Example
 Add a new item to the original dictionary, and see that the values list gets updated as well:
 
 car = {
@@ -172,3 +172,4 @@ print(x) #after the change
 
 #dict_values(['Ford', 'Mustang', 1964])
 #dict_values(['Ford', 'Mustang', 1964, 'red'])
+
