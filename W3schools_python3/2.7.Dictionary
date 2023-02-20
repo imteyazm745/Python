@@ -190,7 +190,18 @@ print(x) #after the change
 #dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
 #dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2020)])
 
-
+Example : Add a new item to the original dictionary, and see that the items list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.items()
+print(x) #before the change
+car["color"] = "red"
+print(x) #after the change
+#dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+#dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964), ('color', 'red')])
 
 Check if Key Exists
 To determine if a specified key is present in a dictionary use the in keyword:
@@ -204,4 +215,3 @@ thisdict = {
 if "model" in thisdict:
   print("Yes, 'model' is one of the keys in the thisdict dictionary")
 #Yes, 'model' is one of the keys in the thisdict dictionary
-
