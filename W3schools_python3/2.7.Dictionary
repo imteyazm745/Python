@@ -5,7 +5,6 @@ A dictionary is a collection which is ordered*, changeable and do not allow dupl
 Dictionaries are written with curly brackets, and have keys and values:
 
 Example : Create and print a dictionary:
-
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
@@ -18,7 +17,6 @@ Dictionary items are ordered, changeable, and does not allow duplicates.
 Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
 
 Example : Print the "brand" value of the dictionary:
-
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
@@ -70,9 +68,7 @@ type()
 From Python's perspective, dictionaries are defined as objects with the data type 'dict':
 <class 'dict'>
 
-Example
-Print the data type of a dictionary:
-
+Example : Print the data type of a dictionary:
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
