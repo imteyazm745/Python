@@ -279,3 +279,4 @@ thisdict = {
 }
 thisdict.pop("model")
 print(thisdict)
+#{'brand': 'Ford', 'year': 1964}
