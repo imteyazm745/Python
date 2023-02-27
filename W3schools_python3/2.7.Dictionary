@@ -293,7 +293,6 @@ print(thisdict)
 
 Example
 The del keyword removes the item with the specified key name:
-
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
@@ -301,3 +300,4 @@ thisdict = {
 }
 del thisdict["model"]
 print(thisdict)
+#{'brand': 'Ford', 'year': 1964}
