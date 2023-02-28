@@ -318,5 +318,15 @@ When looping through a dictionary, the return value are the keys of the dictiona
 
 Example : Print all key names in the dictionary, one by one:
 
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 for x in thisdict:
   print(x)
+
+Output:
+brand
+model
+year
