@@ -302,9 +302,7 @@ del thisdict["model"]
 print(thisdict)
 #{'brand': 'Ford', 'year': 1964}
 
-Example
-The clear() method empties the dictionary:
-
+Example : The clear() method empties the dictionary:
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
@@ -312,3 +310,4 @@ thisdict = {
 }
 thisdict.clear()
 print(thisdict)
+#{}
