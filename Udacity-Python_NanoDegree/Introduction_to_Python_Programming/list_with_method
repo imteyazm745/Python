@@ -36,3 +36,16 @@ print(max(batch_sizes)) # 89
 
 a = ['bravo', 'Aamir', 'Baltzman', 'Rajesh', Anoop]
 print(max(a)) # Rajesh => according to alphabet
+
+Useful Function Lists II
+Join method : Join is a string method that takes a list of strings as an argument, and returns a string consisting of the list elements joined by a separator string.
+
+new_str = "\n".join(["fore", "aft", "starboard", "port"])
+print(new_str)
+
+Output:
+
+fore
+aft
+starboard
+port
