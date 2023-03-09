@@ -8,3 +8,24 @@ print(months[1]) # February
 print(months[7]) # August
 print(months[-1]) # December
 print(months[25]) # IndexError: list index out of range
+
+list Method
+
+Useful Functions for Lists I
+len() : returns how many elements are in a list.
+max() : returns the greatest element of the list. How the greatest element is determined depends on what type objects are in the list. The maximum element in a list of numbers is the largest number. The maximum elements in a list of strings is element that would occur last if the list were sorted alphabetically. This works because the the max function is defined in terms of the greater than comparison operator. The max function is undefined for lists that contain elements from different, incomparable types.
+min() : returns the smallest element in a list. min is the opposite of max, which returns the largest element in a list.
+sorted() : returns a copy of a list in order from smallest to largest, leaving the list unchanged.
+
+name = 'Jim'
+student = name
+name = 'Tim'
+print(name) #Tim
+print(student) #Jim
+
+ascending & descending order: 
+
+sizes = [15, 6, 89, 34, 65, 35]
+print(sorted(sizes)) #[6, 15, 34, 35, 89]
+print(sorted(sizes, reverse=True)) #[89, 35, 34, 15, 6]
+
