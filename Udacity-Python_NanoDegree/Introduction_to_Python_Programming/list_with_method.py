@@ -29,3 +29,10 @@ sizes = [15, 6, 89, 34, 65, 35]
 print(sorted(sizes)) #[6, 15, 34, 35, 89]
 print(sorted(sizes, reverse=True)) #[89, 35, 34, 15, 6]
 
+max & min
+
+batch_sizes = [15, 6, 89, 34, 65, 35]
+print(max(batch_sizes)) # 89
+
+a = ['bravo', 'Aamir', 'Baltzman', 'Rajesh', Anoop]
+print(max(a)) # Rajesh => according to alphabet
