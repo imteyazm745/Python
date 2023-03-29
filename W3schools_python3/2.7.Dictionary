@@ -341,3 +341,13 @@ Ford
 Mustang
 1964
 
+Example
+You can also use the values() method to return values of a dictionary:
+
+for x in thisdict.values():
+  print(x)
+
+output: 
+Ford
+Mustang
+1964
