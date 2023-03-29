@@ -351,3 +351,22 @@ output:
 Ford
 Mustang
 1964
+
+Example
+You can use the keys() method to return the keys of a dictionary:
+
+for x in thisdict.keys():
+  print(x)
+
+Output: 
+brand
+model
+year
+
+Example : Loop through both keys and values, by using the items() method:
+for x, y in thisdict.items():
+  print(x, y)
+
+Output: 
+
+
