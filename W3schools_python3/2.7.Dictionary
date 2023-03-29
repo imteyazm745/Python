@@ -368,5 +368,6 @@ for x, y in thisdict.items():
   print(x, y)
 
 Output: 
-
-
+brand Ford
+model Mustang
+year 1964
