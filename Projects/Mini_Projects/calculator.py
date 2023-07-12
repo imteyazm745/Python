@@ -1,5 +1,5 @@
-a = input("Enter first Number: ")
-b = input("Enter second Number: ")
+a = int(input("Enter first Number: "))  # must use int for taking numbers
+b = int(input("Enter second Number: "))
 add = a+b
 sub = a-b
 mul = a*b
