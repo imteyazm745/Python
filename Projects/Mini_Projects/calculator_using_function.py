@@ -23,13 +23,13 @@ def abs(x):
     return abs(x)
 
 print("Select operation.")
-print('1. Addition\n 2. Subtraction\n 3. multiplication\n 4.Division\n')
+print('1. Addition\n2. Subtraction\n3. multiplication\n4.Division\n')
 
-choice = int(input('Enter your choice(1/2/3/4)'))
+choice = int(input('Enter your choice(1/2/3/4) : '))
 if choice in (1, 2, 3, 4):
     try:
-        num1 = float(input('Enter first number'))
-        num2 = float(input('Enter second number'))
+        num1 = float(input('Enter first number : '))
+        num2 = float(input('Enter second number : '))
     except ValueError:
         print('Invalid input. Please enter a number')
         exit()
