@@ -22,4 +22,5 @@ def negate(x):
 def abs(x):
     return abs(x)
 
-
+print("Select operation.")
+print('1. Addition\n 2. Subtraction\n 3. multiplication\n 4.Division\n')
