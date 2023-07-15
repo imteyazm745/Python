@@ -56,7 +56,7 @@ if __name__ == '__main__':
                     print(char, end=' ')
 
                 elif (Counter(letterGuessed)== Counter(word)):
-                    print(char, end=' ')
+                    print("The word is:", end=' ')
                     print(word)
                     flag = 1
                     print('Coongratulations, you won!')
