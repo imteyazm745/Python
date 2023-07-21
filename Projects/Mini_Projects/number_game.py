@@ -55,3 +55,25 @@ def start1():
                         a = input('> ')
                         a = int(a)
                         i += 1
+
+                    #store the last element of xyz.
+                    last = xyz[-1]
+
+                    #checks whether the input 
+                    # numbers are consecutive
+                    if check(xyz) == True:
+                        if last == 21:
+                            lose1()
+
+                        else:
+                            #'computers turn.'
+                            while j <= comp:
+                                xyz.append(last + j)
+                                j += 1
+                            print("Order of inputs after computer's turn is : ")
+                            print(xyz)
+                            last = xyz[-1]
+
+                    else:
+                        print("\nYou did not input consecutive integers")
+                        lose1()
