@@ -77,3 +77,65 @@ def start1():
                     else:
                         print("\nYou did not input consecutive integers")
                         lose1()
+
+        #player takes the second chance
+        elif chance == 'S':
+            comp = 1
+            las = 0
+            while last < 20:
+                #'computer's turn"
+                j = 1
+                while j <=comp:
+                    xyz.append(last + j)
+                    j += 1
+                print("Order of inputs after computer's turn is : ")
+                print(xyz)
+                if xyz[-1] == 20:
+                    lose1()
+
+                else:
+                    print("\nYour turn.")
+                    print("\nHow many numbers do you wish to enter?")
+                    inp = int(input('> '))
+                    inp = int(inp)
+                    i = 1
+                    print("Enter your values : ")
+                    while i <= inp:
+                        xyz.append(int(input('> ')))
+                        i += 1
+                    last = xyz[-1]
+                    if check(xyz) == True:
+                        near = nearestMultiple(last)
+                        comp = near - last
+                        if comp == 4:
+                            comp = 3
+                        else:
+                            comp = comp
+                    else:
+                        print("\nYou did not input consecutive integers")
+                        lose1()
+            
+            print("\n\n CONGRATULATIONS !! ")
+            print("You have won the game!")
+            exit(0)
+
+        else:
+            print("Wrong input. You are disqualified from the game.")
+
+game = True
+while game == True:
+    print("Player 2 is Computer. ")
+    print("Do you want to play the 21 number game? (yes/no)")
+    ans = input('> ')
+    if ans == 'yes':
+        start1()
+    else:
+        print("Do you want to quit the game? (yes/no)")
+        nex = input('> ')
+        if nex == 'yes':
+            print("You are quitting the game...")
+            exit(0)
+        elif nex == 'no':
+            print("Continuing...")
+        else:
+            print("Wrong choice")
