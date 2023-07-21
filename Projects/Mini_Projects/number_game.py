@@ -13,3 +13,12 @@ def lose1():
     print("Better luck next time !")
     exit(0)
 
+# check whetherthe nummbers are consecutive
+def check(xyz):
+    i =1
+    while i < len(xyz):
+        if xyz[i] - xyz[i-1]!= 1:
+            return False
+        i += 1
+
+    return
