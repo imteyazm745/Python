@@ -11,36 +11,41 @@ def divide(x, y):
     return x / y
 
 print("Select operation.")
-print('1. Addition\n2. Subtraction\n3. multiplication\n4. Division\n')
+print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n")
 
 while True:
-    # take input from the user
-    choice = int(input('Enter your choice(1/2/3/4) : '))
-    
-    # check if choice is one of the four options
+    try:
+        choice = int(input("Enter your choice (1/2/3/4): "))
+    except ValueError:
+        print("Invalid choice. Please enter a number between 1-4.")
+        continue
+
     if choice in (1, 2, 3, 4):
         try:
-            num1 = float(input('Enter first number : '))
-            num2 = float(input('Enter second number : '))
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
         except ValueError:
-            print('Invalid input. Please enter a number')
+            print("Invalid input. Please enter numeric values.")
             continue
 
         if choice == 1:
-            print(num1, "+", num2, "=", add(num1, num2))
-
+            print(f"{num1} + {num2} = {add(num1, num2)}")
         elif choice == 2:
-            print(num1, "-", num2, "=", subtract(num1, num2))
-
+            print(f"{num1} - {num2} = {subtract(num1, num2)}")
         elif choice == 3:
-            print(num1, "*", num2, "=", multiply(num1, num2))
-
+            print(f"{num1} * {num2} = {multiply(num1, num2)}")
         elif choice == 4:
-            print(num1, "/", num2, "=", divide(num1, num2))
+            if num2 == 0:
+                print("Error! Cannot divide by zero.")
+            else:
+                print(f"{num1} / {num2} = {divide(num1, num2)}")
 
-        another_calculation = input("Do You want to calculate again? (y/n) : ")
-        if another_calculation == 'n':
-          break
-            
-    else:
-        print('Invalid input. Please select correct operation')
+        while True:
+            again = input("Do you want to calculate again? (y/n): ").strip().lower()
+            if again == 'n':
+                print("Thank you for using the calculator!")
+                exit()
+            elif again == 'y':
+                break  # break this inner loop and go back to calculation
+            else:
+                print("Invalid input. Please enter 'y' or 'n'.")
